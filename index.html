@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPE - Specialty Coffee & Good Vibes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Fixed Header -->
+    <header class="site-header" id="header">
+        <div class="header-content">
+            <div class="logo">HYPE</div>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="autoShow">HYPE</h1>
+                <p class="tagline autoShow">Specialty Coffee & Good Vibes</p>
+                <a href="#about" class="cta-button autoShow">Discover Our Story</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="autoShow">
+            <h2 class="section-title">About HYPE</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to HYPE - where specialty coffee meets good vibes! We're passionate about bringing you
+                        the finest coffee experience, sourced from the world's best coffee regions and roasted to
+                        perfection.</p>
+
+                    <p>Our mission is simple: to create a space where coffee lovers can enjoy exceptional brews in a
+                        warm, welcoming atmosphere. Every cup tells a story, and we're here to share that story with
+                        you.</p>
+
+                    <p>From our carefully selected single-origin beans to our expertly crafted blends, we ensure that
+                        every sip delivers the perfect balance of flavor, aroma, and satisfaction.</p>
+                </div>
+                <div class="about-image">
+                    <div class="coffee-cup-placeholder autoRotate">
+                        ☕ HYPE Coffee Cup
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="autoShow">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">Espresso</div>
+                    <h3>Signature Espresso</h3>
+                    <p>Rich, bold, and perfectly balanced. Our signature espresso blend delivers intense flavor with a
+                        smooth finish.</p>
+                    <div class="price">$3.50</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">Cappuccino</div>
+                    <h3>Artisan Cappuccino</h3>
+                    <p>Creamy steamed milk meets our signature espresso, topped with the perfect foam art.</p>
+                    <div class="price">$4.25</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">Cold Brew</div>
+                    <h3>Cold Brew Special</h3>
+                    <p>Smooth, refreshing cold brew coffee, steeped for 18 hours for maximum flavor extraction.</p>
+                    <div class="price">$4.00</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">Latte</div>
+                    <h3>Vanilla Latte</h3>
+                    <p>Our signature espresso combined with steamed milk and a hint of vanilla sweetness.</p>
+                    <div class="price">$4.75</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">Beans</div>
+                    <h3>Coffee Beans</h3>
+                    <p>Take home our premium coffee beans. Available in whole bean or ground to your preference.</p>
+                    <div class="price">$18.00/lb</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">Pastry</div>
+                    <h3>Fresh Pastries</h3>
+                    <p>Delicious pastries and baked goods, perfect companions to your favorite coffee.</p>
+                    <div class="price">$2.50 - $5.00</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Order Section -->
+        <section id="contact" class="autoShow">
+            <div class="contact-section">
+                <div class="contact-content">
+                    <h2 class="section-title">Contact & Orders</h2>
+                    <p style="text-align: center; margin-bottom: 2rem;">Ready to experience HYPE? Get in touch with us
+                        or place your order!</p>
+
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="order-type">Order Type</label>
+                                <select id="order-type" name="order-type">
+                                    <option value="pickup">Pickup</option>
+                                    <option value="delivery">Delivery</option>
+                                    <option value="inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Order / Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your order or ask us anything!"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Order / Message</button>
+                        <div class="form-success">Thank you for your message! We'll get back to you soon.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Visit Us</h3>
+                    <p>123 Coffee Street<br>
+                        Coffee District<br>
+                        City, State 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 6:00 AM - 8:00 PM<br>
+                        Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: (555) 123-HYPE<br>
+                        Email: hello@hypecoffee.com</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/hype_specialty_coffee" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+
+            <p>&copy; 2024 HYPE Specialty Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
