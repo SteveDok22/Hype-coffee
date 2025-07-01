@@ -10,7 +10,7 @@ body {
 }
 
 body {
-    background-color: #2a2a2a;
+    background-color: #000000;
     margin: 0;
     font-size: 16px;
     color: #ffffff;
@@ -31,7 +31,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(42, 42, 42, 0.95);
+    background: rgba(255, 135, 0, 0.3);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -54,7 +54,7 @@ body {
 .logo {
     font-family: "Odibee Sans", sans-serif;
     font-size: 2rem;
-    color: #ff8700;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -87,7 +87,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #ff8700 0%, #2a2a2a 100%);
+    background: linear-gradient(178deg, #ff7100 0%, #000000 100%);
     margin: 0 -20px 50px -20px;
     position: relative;
     overflow: hidden;
@@ -187,7 +187,7 @@ section {
 }
 
 .product-card {
-    background: #1a1a1a;
+    background: #030e03;
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -231,7 +231,7 @@ section {
 
 /* Contact Section */
 .contact-section {
-    background: #1a1a1a;
+    background: #030e03;
     padding: 4rem 2rem;
     border-radius: 20px;
     margin: 0 -20px;
@@ -277,10 +277,10 @@ section {
 .form-group select,
 .form-group textarea {
     padding: 1rem;
-    border: 2px solid #333;
+    border: 2px solid #ff8700;
     border-radius: 10px;
-    background: #2a2a2a;
-    color: #ffffff;
+    background: #ffffff;
+    color: #000000;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
@@ -317,7 +317,7 @@ section {
 
 /* Footer */
 footer {
-    background: #1a1a1a;
+    background: linear-gradient(0deg, #ff8700 0%, #000000 100%);
     padding: 3rem 2rem 1rem 2rem;
     margin: 50px -20px 0 -20px;
     text-align: center;
