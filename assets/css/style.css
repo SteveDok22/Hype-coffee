@@ -257,6 +257,102 @@ main {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
 }
 
+/* ================================
+   WAVE ANIMATION FOR HYPE TEXT
+   ================================ */
+
+/* Wave Animation for Hero H1 */
+.hero h1 {
+    font-family: "Odibee Sans", sans-serif;
+    font-size: clamp(4rem, 12vw, 12rem);
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    /* Added for wave effect */
+}
+
+.hero h1 span {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+
+/* Staggered animation delays for each letter */
+.hero h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+/* H */
+.hero h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+/* Y */
+.hero h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/* P */
+.hero h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+/* E */
+
+/* Wave animation keyframes */
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0px) scale(1);
+        color: #ffffff;
+        text-shadow:
+            2px 2px 4px rgba(255, 255, 255, 0.1),
+            0 0 10px rgba(0, 0, 0, 0.8);
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.1);
+        color: #000000;
+        text-shadow:
+            0 0 20px rgba(255, 255, 255, 0.9),
+            0 0 40px rgba(255, 255, 255, 0.6),
+            2px 2px 8px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Enhanced effect on hover (optional) */
+.hero h1:hover span {
+    animation-duration: 1s;
+    /* Faster animation on hover */
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+    .hero h1 span {
+        animation-duration: 2.5s;
+        /* Slightly slower on mobile for better performance */
+    }
+
+    @keyframes wave {
+
+        0%,
+        100% {
+            transform: translateY(0px) scale(1);
+            color: #ffffff;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        }
+
+        50% {
+            transform: translateY(-15px) scale(1.05);
+            /* Less movement on mobile */
+            color: #000000;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
 .hero .tagline {
     font-size: clamp(1.5rem, 4vw, 3rem);
     color: #ffffff;
@@ -327,6 +423,7 @@ section {
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(255, 135, 0, 0.3);
 }
+
 /* ================================
    ABOUT SECTION IMAGE STYLING
    ================================ */
@@ -335,7 +432,8 @@ section {
 .coffee-cup-placeholder {
     width: 300px;
     height: 400px;
-    background: transparent; /* Remove the gradient background */
+    background: transparent;
+    /* Remove the gradient background */
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -344,7 +442,8 @@ section {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 auto;
-    overflow: hidden; /* Ensure image doesn't overflow */
+    overflow: hidden;
+    /* Ensure image doesn't overflow */
     position: relative;
 }
 
@@ -352,14 +451,19 @@ section {
 #profile-photo.sectione-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image covers the container properly */
+    object-fit: cover;
+    /* Ensures image covers the container properly */
     border-radius: 15px;
     border: 3px solid #ff8700;
-    box-shadow: 
-        0 0 20px rgba(255, 135, 0, 0.6),    /* Orange glow */
-        0 0 40px rgba(255, 135, 0, 0.4),    /* Larger orange glow */
-        0 0 80px rgba(255, 135, 0, 0.2),    /* Even larger glow */
-        0 10px 30px rgba(0, 0, 0, 0.3);     /* Drop shadow */
+    box-shadow:
+        0 0 20px rgba(255, 135, 0, 0.6),
+        /* Orange glow */
+        0 0 40px rgba(255, 135, 0, 0.4),
+        /* Larger orange glow */
+        0 0 80px rgba(255, 135, 0, 0.2),
+        /* Even larger glow */
+        0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Drop shadow */
     transition: all 0.3s ease;
 }
 
@@ -367,24 +471,31 @@ section {
 #profile-photo.sectione-image:hover {
     transform: scale(1.05);
     border-color: #ff6b00;
-    box-shadow: 
-        0 0 30px rgba(255, 135, 0, 0.8),    /* Stronger orange glow */
-        0 0 60px rgba(255, 135, 0, 0.6),    /* Larger glow */
-        0 0 120px rgba(255, 135, 0, 0.3),   /* Maximum glow */
-        0 15px 40px rgba(0, 0, 0, 0.4);     /* Stronger drop shadow */
+    box-shadow:
+        0 0 30px rgba(255, 135, 0, 0.8),
+        /* Stronger orange glow */
+        0 0 60px rgba(255, 135, 0, 0.6),
+        /* Larger glow */
+        0 0 120px rgba(255, 135, 0, 0.3),
+        /* Maximum glow */
+        0 15px 40px rgba(0, 0, 0, 0.4);
+    /* Stronger drop shadow */
 }
 
 /* Glowing border animation */
 @keyframes glowPulse {
-    0%, 100% {
-        box-shadow: 
+
+    0%,
+    100% {
+        box-shadow:
             0 0 20px rgba(255, 135, 0, 0.6),
             0 0 40px rgba(255, 135, 0, 0.4),
             0 0 80px rgba(255, 135, 0, 0.2),
             0 10px 30px rgba(0, 0, 0, 0.3);
     }
+
     50% {
-        box-shadow: 
+        box-shadow:
             0 0 30px rgba(255, 135, 0, 0.8),
             0 0 60px rgba(255, 135, 0, 0.6),
             0 0 120px rgba(255, 135, 0, 0.4),
@@ -403,10 +514,10 @@ section {
         width: 250px;
         height: 320px;
     }
-    
+
     #profile-photo.sectione-image {
         border-width: 2px;
-        box-shadow: 
+        box-shadow:
             0 0 15px rgba(255, 135, 0, 0.6),
             0 0 30px rgba(255, 135, 0, 0.4),
             0 5px 20px rgba(0, 0, 0, 0.3);
@@ -419,6 +530,7 @@ section {
         height: 260px;
     }
 }
+
 /* Products Section -  */
 .products-grid {
     display: grid;
