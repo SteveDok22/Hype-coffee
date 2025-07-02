@@ -547,6 +547,36 @@ footer {
     transform: translateY(-2px);
 }
 
+/* FOOTER ADDRESS LINK STYLES */
+
+.address-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.address-link:hover {
+    color: #ff8700;
+    background: rgba(255, 135, 0, 0.1);
+    border-color: rgba(255, 135, 0, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 135, 0, 0.2);
+}
+
+.address-link:active {
+    transform: translateY(0);
+}
+
+/* Added a subtle map icon effect on hover */
+.address-link:hover::before {
+    content: "📍 ";
+    margin-right: 0.5rem;
+}
+
 /* Animations */
 .autoShow {
     animation: autoShowAnimation both;
