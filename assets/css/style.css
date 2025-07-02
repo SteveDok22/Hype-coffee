@@ -327,7 +327,98 @@ section {
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(255, 135, 0, 0.3);
 }
+/* ================================
+   ABOUT SECTION IMAGE STYLING
+   ================================ */
 
+/* Container styling update */
+.coffee-cup-placeholder {
+    width: 300px;
+    height: 400px;
+    background: transparent; /* Remove the gradient background */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2a2a2a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure image doesn't overflow */
+    position: relative;
+}
+
+/* Image styling with glow effect */
+#profile-photo.sectione-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the container properly */
+    border-radius: 15px;
+    border: 3px solid #ff8700;
+    box-shadow: 
+        0 0 20px rgba(255, 135, 0, 0.6),    /* Orange glow */
+        0 0 40px rgba(255, 135, 0, 0.4),    /* Larger orange glow */
+        0 0 80px rgba(255, 135, 0, 0.2),    /* Even larger glow */
+        0 10px 30px rgba(0, 0, 0, 0.3);     /* Drop shadow */
+    transition: all 0.3s ease;
+}
+
+/* Enhanced glow on hover */
+#profile-photo.sectione-image:hover {
+    transform: scale(1.05);
+    border-color: #ff6b00;
+    box-shadow: 
+        0 0 30px rgba(255, 135, 0, 0.8),    /* Stronger orange glow */
+        0 0 60px rgba(255, 135, 0, 0.6),    /* Larger glow */
+        0 0 120px rgba(255, 135, 0, 0.3),   /* Maximum glow */
+        0 15px 40px rgba(0, 0, 0, 0.4);     /* Stronger drop shadow */
+}
+
+/* Glowing border animation */
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(255, 135, 0, 0.6),
+            0 0 40px rgba(255, 135, 0, 0.4),
+            0 0 80px rgba(255, 135, 0, 0.2),
+            0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(255, 135, 0, 0.8),
+            0 0 60px rgba(255, 135, 0, 0.6),
+            0 0 120px rgba(255, 135, 0, 0.4),
+            0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Apply pulsing glow animation */
+#profile-photo.sectione-image {
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    .coffee-cup-placeholder {
+        width: 250px;
+        height: 320px;
+    }
+    
+    #profile-photo.sectione-image {
+        border-width: 2px;
+        box-shadow: 
+            0 0 15px rgba(255, 135, 0, 0.6),
+            0 0 30px rgba(255, 135, 0, 0.4),
+            0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coffee-cup-placeholder {
+        width: 200px;
+        height: 260px;
+    }
+}
 /* Products Section -  */
 .products-grid {
     display: grid;
