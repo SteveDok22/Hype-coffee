@@ -637,16 +637,64 @@ section {
 
 .form-success {
     display: none;
-    background: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 15px;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    border: 2px solid #45a049;
+    box-shadow: 0 10px 30px rgba(76, 175, 80, 0.3);
+    animation: successPulse 0.5s ease-out;
 }
 
-.submit-btn:active+.form-success {
+.form-success.show {
     display: block;
+}
+
+@keyframes successPulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.form-success::before {
+    content: "✓ ";
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Dynamic Address Field Styles */
+.address-field {
+    display: none;
+    animation: slideDown 0.3s ease-out;
+}
+
+.address-field.show {
+    display: flex;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .form-group {
