@@ -677,12 +677,20 @@ section {
 
 /* Dynamic Address Field Styles */
 .address-field {
-    display: none;
-    animation: slideDown 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-out;
 }
 
 .address-field.show {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    margin-bottom: 1.5rem;
 }
 
 @keyframes slideDown {
