@@ -301,7 +301,7 @@ main {
     animation-duration: 1s;
 }
 
-/* Mobile optimization */
+/* Mobile optimization  */
 @media screen and (max-width: 768px) {
     .neon-pulse {
         text-shadow:
@@ -310,30 +310,6 @@ main {
             0 0 12px #ffffff,
             0 0 24px #ffffff,
             0 0 48px #ffffff;
-    }
-
-    @keyframes neonPulse {
-
-        0%,
-        100% {
-            text-shadow:
-                0 0 3px #ffffff,
-                0 0 6px #ffffff,
-                0 0 12px #ffffff,
-                0 0 24px #ffffff,
-                0 0 48px #ffffff;
-        }
-
-        50% {
-            text-shadow:
-                0 0 1px #ffffff,
-                0 0 3px #ffffff,
-                0 0 6px #ffffff,
-                0 0 12px #ffffff,
-                0 0 24px #ffffff,
-                0 0 48px #ffffff,
-                0 0 72px #ffffff;
-        }
     }
 }
 
@@ -824,6 +800,12 @@ footer {
 .autoShow {
     animation: autoShowAnimation both;
     animation-timeline: view(70% 5%);
+}
+
+/* Special case for neon-pulse elements */
+.autoShow.neon-pulse {
+    animation: autoShowAnimation both, neonPulse 2s ease-in-out infinite;
+    animation-timeline: view(70% 5%), auto;
 }
 
 @keyframes autoShowAnimation {
