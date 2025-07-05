@@ -1,7 +1,6 @@
 # HYPE Specialty Coffee & Good Vibes
-A modern, responsive website for HYPE specialty coffee shop, designed to showcase premium coffee products and create an engaging online presence for coffee enthusiasts.
 
-![HYPE Coffee Website](assets/images/hero-preview.jpg)
+A modern, responsive website for HYPE specialty coffee shop, designed to showcase premium coffee products and create an engaging online presence for coffee enthusiasts.
 
 ## 🎯 Project Overview
 
@@ -28,7 +27,7 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - **Enhanced Header:** Glassmorphic design with backdrop blur and smooth hover transitions
 - **Mobile Hamburger Menu:** Push menu (side drawer) with orange gradient animations for perfect mobile navigation
 - **Premium Product Cards:** Gradient backgrounds with sophisticated hover animations
-- **Wave Animation Logo:** Dynamic "HYPE" text with wave bounce effect and color transitions
+- **Neon Pulse Animation:** Dynamic "HYPE" text with pulsing white neon glow effect
 - **Interactive About Image:** Custom coffee image with glowing effects and proper sizing
 - **Clickable Address:** Google Maps integration for easy location finding
 - **Responsive Design:** Fully responsive layout optimized for desktop, tablet, and mobile devices
@@ -36,16 +35,16 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - **Modern Animations:** Scroll-triggered animations using CSS animation-timeline
 
 ### Website Sections
-1. **Hero Section:** Eye-catching banner with animated "HYPE" wave text and compelling tagline
-2. **About Section:** Company story with custom coffee image featuring glow effects
-3. **Products Section:** Enhanced showcase of coffee products with emoji icons and dynamic pricing badges
-4. **Contact/Order Section:** Combined contact form and ordering system for customer inquiries
-5. **Footer:** Business information with clickable Google Maps address and social media links
+- **Hero Section:** Eye-catching banner with animated "HYPE" neon pulse text and compelling tagline
+- **About Section:** Company story with custom coffee image featuring glow effects
+- **Products Section:** Enhanced showcase of coffee products with emoji icons and dynamic pricing badges
+- **Contact/Order Section:** Combined contact form and ordering system for customer inquiries
+- **Footer:** Business information with clickable Google Maps address and social media links
 
 ### Interactive Elements
 - **Animated Logo:** SVG coffee cup with floating steam animation in header
 - **Hamburger Menu:** Mobile-only push menu that slides from left with overlay
-- **Wave Text Animation:** "HYPE" letters bounce in sequence with white-to-black color change
+- **Neon Pulse Animation:** "HYPE" text with pulsing white glow effect around black text
 - **Glowing Image:** About section image with pulsing orange glow effect
 - **Advanced Hover Effects:** Product cards with 3D lift, rotation, and gradient overlay effects
 - **Clickable Address:** Footer address opens Google Maps in new tab
@@ -76,13 +75,13 @@ Based on HYPE's brand identity:
 ### Typography
 - **Display Font:** "Odibee Sans" - Used for headers, logo, and impactful text
 - **Body Font:** "Libre Baskerville" - Elegant serif for body text and readability
-- **Font Loading:** Google Fonts with `display=swap` for optimal performance
+- **Font Loading:** Google Fonts with display=swap for optimal performance
 
 ### Visual Design Principles
 - **Modern Aesthetic:** Clean, contemporary design with rounded corners and gradients
 - **SVG Integration:** Custom scalable graphics for logo and illustrations
 - **Card-Based Layout:** Enhanced product information presented in premium-style cards
-- **Wave Animation:** Dynamic text effects that bring energy to the brand
+- **Neon Effects:** Dynamic pulsing glow effects that bring energy to the brand
 - **Glowing Effects:** Subtle light effects that enhance visual appeal
 - **Consistent Spacing:** Harmonious spacing and padding throughout
 - **Visual Hierarchy:** Clear information hierarchy using typography, color, and animation
@@ -94,14 +93,14 @@ Based on HYPE's brand identity:
 - **CSS3:** Advanced CSS features including Grid, Flexbox, gradients, and SVG animations
 - **Google Fonts:** External font loading for custom typography
 - **SVG Graphics:** Custom vector graphics with CSS animations
-- **No JavaScript:** Pure HTML/CSS implementation for optimal performance
+- **Minimal JavaScript:** Only for form functionality and mobile menu interactions
 
 ### Advanced CSS Features
 - **CSS Grid:** Complex layouts with responsive grid systems
 - **Flexbox:** Flexible component layouts and alignments
 - **SVG Animations:** Animated vector graphics using CSS transforms
-- **Modern Animations:** `animation-timeline: view()` for scroll-triggered effects
-- **Wave Text Animation:** Complex keyframe animations with staggered delays
+- **Modern Animations:** animation-timeline: view() for scroll-triggered effects
+- **Neon Pulse Animation:** Complex keyframe animations with pulsing glow effects
 - **Gradient Backgrounds:** Multi-stop linear gradients for visual depth
 - **Backdrop Filters:** Modern glassmorphic effects in header
 - **CSS Transitions:** Smooth hover effects and state changes
@@ -111,11 +110,11 @@ Based on HYPE's brand identity:
 ### File Organization
 ```
 hype-coffee-website/
-├── index.html                 # Main HTML with hamburger menu and wave animation
-├── README.md                 # Updated project documentation
+├── index.html                 # Main HTML with hamburger menu and neon animation
+├── README.md                 # Project documentation
 └── assets/
     ├── css/
-    │   └── style.css         # All styles including hamburger menu and animations
+    │   └── style.css         # All styles including neon pulse animation
     ├── images/               # Image assets folder
     │   ├── hero-coffee.jpg   # Hero section image
     │   ├── about-section.jpg # About section image
@@ -154,48 +153,41 @@ hype-coffee-website/
 
 ## 🚀 Recent Updates & Major Enhancements
 
-### Mobile Navigation (Latest Update)
+### Neon Pulse Animation (Latest Update)
+- **Black Text with White Glow:** HYPE text now displays as black with pulsing white neon glow
+- **Smooth Pulsing Effect:** 2-second animation cycle that intensifies and fades the glow
+- **Hover Enhancement:** Animation speeds up to 1 second on hover
+- **Mobile Optimized:** Reduced glow intensity on mobile for better performance
+- **Clean CSS Implementation:** Single keyframe definition without conflicts
+
+### Mobile Navigation (Enhanced)
 - **Push Menu Implementation:** Side drawer that slides in from left
 - **Pure CSS Solution:** No JavaScript required for hamburger functionality
 - **Gradient Hamburger Lines:** Orange gradient with bouncy cubic-bezier animation
 - **Dark Overlay:** Professional overlay background when menu is active
 - **Touch Optimized:** Perfect for smartphone and tablet interaction
 
-### Hero Section Animation (Latest Update)
-- **Wave Text Effect:** "HYPE" letters bounce in sequence with color transitions
-- **Staggered Animation:** Each letter has 0.1s delay creating wave pattern
-- **Color Morphing:** Letters change from white to black with glow effects
-- **Mobile Optimized:** Reduced animation intensity on smaller screens
-- **Hover Enhancement:** Faster animation on hover interaction
-
-### About Section Image (Latest Update)
+### About Section Image (Enhanced)
 - **Custom Coffee Image:** Real coffee image replacing placeholder
 - **Glowing Effects:** Multi-layered orange glow with pulsing animation
 - **Perfect Sizing:** Responsive image sizing (300x400px desktop, smaller mobile)
 - **Static Positioning:** Removed rotation to allow comfortable reading
 - **Enhanced Styling:** Border, shadows, and hover effects
 
-### Footer Enhancement (Latest Update)
+### Footer Enhancement
 - **Google Maps Integration:** Clickable address opens in Google Maps
 - **Real Address:** Updated with actual Zurich location
 - **Hover Effects:** Orange glow and lift animation on address hover
 - **Map Icon:** Location emoji appears on hover
 - **Mobile Friendly:** Touch-optimized for smartphone map opening
 
-### Technical Improvements
-- **Better CSS Organization:** Clear separation of new features with comments
-- **Enhanced Animations:** Smoother transitions and more sophisticated effects
-- **Improved Performance:** Optimized CSS for faster rendering
-- **Better Maintainability:** Well-commented code for easy updates
-- **Pure CSS Solutions:** No JavaScript dependencies for core functionality
-
 ## 🎬 Animation Features
 
-### Wave Text Animation (New)
-- **Letter Sequence:** H → Y → P → E bounce in 0.1s intervals
-- **Color Transition:** White to black with white glow effects
-- **Scale Effect:** Letters grow slightly at animation peak
-- **Continuous Loop:** 2-second cycle with smooth transitions
+### Neon Pulse Animation (Featured)
+- **Pulsing Glow:** White glow intensifies and fades every 2 seconds
+- **Black Text Core:** High contrast black text with white outline
+- **Hover Acceleration:** Faster animation on hover interaction
+- **Mobile Optimization:** Reduced glow intensity for performance
 
 ### SVG Logo Animations
 - **Steam Animation:** Gentle floating motion using CSS transforms
@@ -267,7 +259,7 @@ hype-coffee-website/
 - [ ] All file paths are correct and case-sensitive
 - [ ] SVG graphics display correctly across browsers
 - [ ] Hamburger menu functions properly on mobile
-- [ ] Wave animation works smoothly
+- [ ] Neon pulse animation works smoothly
 - [ ] Image glow effects display correctly
 - [ ] Google Maps address link works
 - [ ] All animations work smoothly
@@ -277,17 +269,25 @@ hype-coffee-website/
 
 ## 📝 Content Customization Guide
 
-### Updating the Wave Animation
-The current wave animation uses individual spans for each letter:
+### Updating the Neon Pulse Animation
+The current neon pulse animation can be customized:
 
-```html
-<!-- Current structure -->
-<h1 class="autoShow">
-    <span>H</span><span>Y</span><span>P</span><span>E</span>
-</h1>
+```css
+/* Adjust pulse speed */
+.neon-pulse {
+    animation: neonPulse 3s ease-in-out infinite; /* Change 2s to 3s for slower */
+}
+
+/* Adjust glow intensity */
+.neon-pulse {
+    text-shadow:
+        0 0 5px #ffffff,    /* Inner glow */
+        0 0 10px #ffffff,   /* Medium glow */
+        0 0 20px #ffffff,   /* Outer glow */
+        0 0 40px #ffffff,   /* Extended glow */
+        0 0 80px #ffffff;   /* Maximum glow */
+}
 ```
-
-To customize for different text, wrap each letter in `<span>` tags and adjust CSS delays.
 
 ### Updating the Custom Image
 Replace the coffee image in the about section:
@@ -310,7 +310,7 @@ Update the Google Maps link with your location:
 Replace the coordinates with your actual address.
 
 ### Hamburger Menu Customization
-To change hamburger menu colors or animation, modify these CSS variables:
+To change hamburger menu colors or animation:
 
 ```css
 .hamburger-line {
@@ -321,7 +321,7 @@ To change hamburger menu colors or animation, modify these CSS variables:
 ## ✅ Testing & Quality Assurance
 
 ### Enhanced Testing Checklist
-- [ ] Wave animation displays and loops correctly
+- [ ] Neon pulse animation displays and loops correctly
 - [ ] Hamburger menu opens/closes smoothly on mobile
 - [ ] Image glow effects work without performance issues
 - [ ] Google Maps address link opens correctly
@@ -333,15 +333,15 @@ To change hamburger menu colors or animation, modify these CSS variables:
 
 ### Cross-Browser Testing
 Test enhanced features in:
-- [ ] Google Chrome (latest) - Full feature support
-- [ ] Mozilla Firefox (latest) - SVG and backdrop-filter support
-- [ ] Safari (if using Mac) - Webkit animations and iOS testing
-- [ ] Microsoft Edge (latest) - Modern CSS features
-- [ ] Mobile browsers (iOS Safari, Chrome Mobile)
+- [ ] **Google Chrome (latest)** - Full feature support
+- [ ] **Mozilla Firefox (latest)** - SVG and backdrop-filter support
+- [ ] **Safari (if using Mac)** - Webkit animations and iOS testing
+- [ ] **Microsoft Edge (latest)** - Modern CSS features
+- [ ] **Mobile browsers** (iOS Safari, Chrome Mobile)
 
 ### Mobile Testing Priority
 - [ ] Hamburger menu touch responsiveness
-- [ ] Wave animation performance on mobile
+- [ ] Neon pulse animation performance on mobile
 - [ ] Image glow effects don't cause lag
 - [ ] Address link opens maps app properly
 - [ ] All animations work smoothly on various device sizes
@@ -382,7 +382,7 @@ This project fully meets all specified requirements with major enhancements:
 ### Learning Outcome 1: Design (✅ Enhanced)
 - [x] 1.1 Advanced navigation with animated SVG logo and mobile hamburger menu
 - [x] 1.2 Superior accessibility with scalable graphics and touch-friendly interface
-- [x] 1.3 Exceptional UX with wave animations, glow effects, and smooth interactions
+- [x] 1.3 Exceptional UX with neon pulse animations, glow effects, and smooth interactions
 - [x] 1.4 Backdrop never distracts (glassmorphic effects with purpose)
 - [x] 1.5 Consistent enhanced graphics and gradient scheme throughout
 - [x] 1.6 User-controlled interactions with smooth feedback and animations
@@ -402,15 +402,16 @@ This project fully meets all specified requirements with major enhancements:
 
 ### Location
 **HYPE Specialty Coffee & Good Vibes**
+
 - **Address:** Universitätstrasse 41, 8006 Zurich, Switzerland
 - **Phone:** (+41) 76 502 22 53
 - **Email:** hello@hypecoffee.com
-- **Hours:** 
+- **Hours:**
   - Monday - Friday: 7:30 AM - 6:00 PM
   - Saturday - Sunday: 9:00 AM - 4:00 PM
 
 ### Social Media
-- **Instagram:** [@hype_specialty_coffee](https://www.instagram.com/hype_specialty_coffee)
+- **Instagram:** @hype_specialty_coffee
 - **Facebook:** [Coming Soon]
 - **Twitter:** [Coming Soon]
 
@@ -418,7 +419,7 @@ This project fully meets all specified requirements with major enhancements:
 
 ### Technical Support
 For questions about the enhanced website features:
-- **Wave Animation:** Detailed CSS keyframes for text effects
+- **Neon Pulse Animation:** Complex CSS keyframes with pulsing glow effects
 - **Hamburger Menu:** Pure CSS mobile navigation implementation
 - **Image Effects:** Multi-layer glow and animation techniques
 - **SVG Customization:** Detailed comments in HTML for logo modifications
@@ -427,21 +428,21 @@ For questions about the enhanced website features:
 
 ### Development Notes
 - **Mobile-First Approach:** All new features designed for mobile first
-- **Pure CSS Implementation:** No JavaScript dependencies for core functionality
+- **Pure CSS Implementation:** Minimal JavaScript dependencies for core functionality
 - **Performance Optimized:** Efficient animations and scalable graphics
 - **Well-Documented:** Comprehensive comments for easy maintenance
 
 ## 📄 Credits & Attribution
 
 ### External Resources
-- **Google Fonts:**
-  - Libre Baskerville (Open Font License)
-  - Odibee Sans (Open Font License)
-- **Font Loading:** Optimized with `display=swap` parameter
+**Google Fonts:**
+- Libre Baskerville (Open Font License)
+- Odibee Sans (Open Font License)
+- Font Loading: Optimized with display=swap parameter
 
 ### Custom Development
 - **SVG Graphics:** Hand-crafted logo and illustrations
-- **Wave Animation:** Custom CSS keyframes with staggered timing
+- **Neon Pulse Animation:** Custom CSS keyframes with pulsing glow effects
 - **Hamburger Menu:** Pure CSS push menu implementation
 - **Glow Effects:** Multi-layer shadow techniques
 - **Enhanced Animations:** Custom CSS keyframes and transitions
@@ -459,15 +460,15 @@ For questions about the enhanced website features:
 
 **Project Status:** Production Ready with Advanced Features  
 **Last Updated:** January 2025  
-**Version:** 3.0 (Mobile & Animation Enhanced Edition)
+**Version:** 4.0 (Neon Pulse Animation Edition)
 
 © 2024 HYPE Specialty Coffee. Website designed and developed with passion for great coffee, good vibes, mobile-first design, and cutting-edge web technology.
 
-**Key Features Summary:**
-- ✅ Mobile hamburger menu (push drawer style)
-- ✅ Wave animation for "HYPE" text with color transitions
-- ✅ Custom coffee image with glowing effects
-- ✅ Clickable Google Maps address integration
-- ✅ Fully responsive design optimized for all devices
-- ✅ Pure CSS implementation (no JavaScript required)
-- ✅ Production-ready for deployment
+### Key Features Summary:
+✅ **Mobile hamburger menu** (push drawer style)  
+✅ **Neon pulse animation** for "HYPE" text with black text and white glow  
+✅ **Custom coffee image** with glowing effects  
+✅ **Clickable Google Maps** address integration  
+✅ **Fully responsive design** optimized for all devices  
+✅ **Pure CSS implementation** (minimal JavaScript required)  
+✅ **Production-ready** for deployment
