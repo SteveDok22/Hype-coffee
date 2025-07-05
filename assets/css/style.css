@@ -249,24 +249,15 @@ main {
     padding: 2rem;
 }
 
-.hero h1 {
-    font-family: "Odibee Sans", sans-serif;
-    font-size: clamp(4rem, 12vw, 12rem);
-    color: #2a2a2a;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
-}
-
 /* NEON ANIMATION FOR HYPE TEXT */
 
-/* Neon Animation for Hero H1 */
+/* Clean Hero H1 - Single Definition */
 .hero h1 {
     font-family: "Odibee Sans", sans-serif;
     font-size: clamp(4rem, 12vw, 12rem);
-    color: #ffffff;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
     display: inline-block;
+    /* Remove color here - let .neon-pulse handle it */
 }
 
 /* Neon Pulse Effect */
