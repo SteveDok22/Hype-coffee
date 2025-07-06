@@ -262,7 +262,7 @@ main {
 
 /* Neon Pulse Effect */
 .neon-pulse {
-    color: #023d02 !important;
+    color: #002b00 !important;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ffffff,
@@ -322,7 +322,7 @@ main {
 
 .cta-button {
     display: inline-block;
-    background: #023d02;
+    background: #002b00;
     color: #ffffff;
     padding: 1rem 2rem;
     text-decoration: none;
