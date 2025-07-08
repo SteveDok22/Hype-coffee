@@ -94,7 +94,7 @@
             transform: translateY(-2px);
         }
 
-        * Main Content */
+        /* Main Content */
         main {
             max-width: 1200px;
             margin: 0 auto;
@@ -127,7 +127,7 @@
             color: #ffffff;
             font-weight: bold;
             font-size: 2rem;
-            box-shadow: 
+            box-shadow:
                 0 0 30px rgba(0, 150, 255, 0.6),
                 0 0 60px rgba(0, 150, 255, 0.4),
                 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -135,15 +135,18 @@
         }
 
         @keyframes coldGlow {
-            0%, 100% {
-                box-shadow: 
+
+            0%,
+            100% {
+                box-shadow:
                     0 0 30px rgba(0, 150, 255, 0.6),
                     0 0 60px rgba(0, 150, 255, 0.4),
                     0 20px 40px rgba(0, 0, 0, 0.3);
                 transform: scale(1);
             }
+
             50% {
-                box-shadow: 
+                box-shadow:
                     0 0 40px rgba(0, 150, 255, 0.8),
                     0 0 80px rgba(0, 150, 255, 0.6),
                     0 0 120px rgba(0, 150, 255, 0.3),
@@ -180,6 +183,160 @@
             font-size: 1.3rem;
             line-height: 1.8;
             margin-bottom: 2rem;
+        }
+
+        /* Cold Brew Process Section */
+        .process-section {
+            background: linear-gradient(145deg, #001122, #000811);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 4rem 0;
+            border: 2px solid rgba(0, 150, 255, 0.3);
+        }
+
+        .process-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            color: #0096ff;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 150, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 150, 255, 0.2);
+            position: relative;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 30px;
+            background: linear-gradient(to bottom, #0096ff, transparent);
+        }
+
+        .step-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #0096ff, #0066cc);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: #0096ff;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .step-time {
+            color: #0096ff;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        /* Product Details */
+        .product-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .detail-card {
+            background: linear-gradient(145deg, #001122, #000811);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 150, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .detail-card:hover {
+            border-color: rgba(0, 150, 255, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 150, 255, 0.2);
+        }
+
+        .detail-card h3 {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 1.8rem;
+            color: #0096ff;
+            margin-bottom: 1rem;
+        }
+
+        .detail-card p {
+            line-height: 1.6;
+        }
+
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(0, 150, 255, 0.1);
+        }
+
+        .ingredients-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Order Section */
+        .order-section {
+            background: linear-gradient(135deg, #0096ff, #0066cc);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+            color: #ffffff;
+        }
+
+        .order-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .order-button {
+            background: #ffffff;
+            color: #0096ff;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .order-button:hover {
+            background: #001122;
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
