@@ -8,7 +8,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap"
         rel="stylesheet">
     <style>
+        /* Reset and Base Styles */
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
 
+        body {
+            background: linear-gradient(180deg, #4a2c2a 0%, #2a1810 50%, #000000 100%);
+            margin: 0;
+            font-size: 16px;
+            color: #ffffff;
+            font-family: "Libre Baskerville", serif;
+            line-height: 1.6;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        /* Header Styles */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 193, 7, 0.2);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(255, 193, 7, 0.3);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+        }
+
+        .logo-svg {
+            width: 45px;
+            height: 45px;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 8px rgba(255, 193, 7, 0.3));
+        }
+
+        .logo {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 1.8rem;
+            color: #ffffff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            background: #ffc107;
+            color: #2a1810;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .back-button:hover {
+            background: transparent;
+            color: #ffc107;
+            border-color: #ffc107;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 
