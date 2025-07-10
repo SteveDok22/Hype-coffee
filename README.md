@@ -26,20 +26,26 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - **Animated SVG Logo:** Custom coffee cup logo with animated steam effects in the header
 - **Enhanced Header:** Glassmorphic design with backdrop blur and smooth hover transitions
 - **Mobile Hamburger Menu:** Push menu (side drawer) with orange gradient animations for perfect mobile navigation
-- **Premium Product Cards:** Gradient backgrounds with sophisticated hover animations
+- **Premium Product Cards:** Gradient backgrounds with sophisticated hover animations and improved text visibility
 - **Neon Pulse Animation:** Dynamic "HYPE" text with pulsing white neon glow effect
 - **Interactive About Image:** Custom coffee image with glowing effects and proper sizing
 - **Clickable Address:** Google Maps integration for easy location finding
 - **Responsive Design:** Fully responsive layout optimized for desktop, tablet, and mobile devices
 - **Smooth Scrolling:** CSS-based smooth scrolling navigation between sections
 - **Modern Animations:** Scroll-triggered animations using CSS animation-timeline
+- **Cross-Page Navigation:** Order buttons from product pages redirect to main contact form
 
 ### Website Sections
 - **Hero Section:** Eye-catching banner with animated "HYPE" neon pulse text and compelling tagline
 - **About Section:** Company story with custom coffee image featuring glow effects
-- **Products Section:** Enhanced showcase of coffee products with emoji icons and dynamic pricing badges
+- **Products Section:** Streamlined showcase of three core products with enhanced visibility
 - **Contact/Order Section:** Combined contact form and ordering system for customer inquiries
 - **Footer:** Business information with clickable Google Maps address and social media links
+
+### Product Pages
+- **Pink Matcha (Dragon Fruit):** Exotic superfood powder with video integration and vertical video window
+- **Cold Brew Special:** 18-hour cold brew process with detailed timeline and benefits
+- **Valenio Wholesale Coffee:** Professional coffee beans with expertise showcase and video content
 
 ### Interactive Elements
 - **Animated Logo:** SVG coffee cup with floating steam animation in header
@@ -51,12 +57,13 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - **Form Styling:** Professional contact form with focus states and validation styling
 - **Scroll Animations:** Elements animate into view as users scroll through the page
 - **Visual Feedback:** Enhanced buttons and links with smooth transitions
+- **Video Integration:** Vertical video window in Pink Matcha product page
 
 ### Accessibility Features
 - **Semantic HTML5:** Proper heading structure and semantic elements throughout
 - **SVG Graphics:** Scalable vector graphics for crisp display on all devices
 - **Keyboard Navigation:** All interactive elements accessible via keyboard
-- **High Contrast:** Color scheme optimized for readability and accessibility compliance
+- **High Contrast:** Improved text visibility with enhanced color schemes
 - **Screen Reader Friendly:** Proper labeling and structure for assistive technologies
 - **Mobile Touch-Friendly:** Hamburger menu and buttons optimized for touch interaction
 
@@ -71,6 +78,7 @@ Based on HYPE's brand identity:
 - **Card Background:** `linear-gradient(145deg, #1a1a1a, #0a0a0a)` (Enhanced product cards)
 - **Contact Background:** `#030e03` (Contact section background)
 - **White Text:** `#ffffff` (Primary text color)
+- **Enhanced Text:** `#e0e0e0` (Improved visibility for product descriptions)
 
 ### Typography
 - **Display Font:** "Odibee Sans" - Used for headers, logo, and impactful text
@@ -85,6 +93,7 @@ Based on HYPE's brand identity:
 - **Glowing Effects:** Subtle light effects that enhance visual appeal
 - **Consistent Spacing:** Harmonious spacing and padding throughout
 - **Visual Hierarchy:** Clear information hierarchy using typography, color, and animation
+- **Improved Readability:** Enhanced text visibility with proper contrast and shadows
 
 ## 🛠️ Technical Implementation
 
@@ -106,27 +115,24 @@ Based on HYPE's brand identity:
 - **CSS Transitions:** Smooth hover effects and state changes
 - **Hamburger Menu:** Pure CSS checkbox-based mobile navigation
 - **Glow Effects:** Multi-layered box-shadow for realistic lighting
+- **Text Shadows:** Enhanced text visibility with strategic shadow placement
 
 ### File Organization
 ```
 hype-coffee-website/
-├── index.html                 # Main HTML with hamburger menu and neon animation
-├── README.md                 # Project documentation
+├── index.html                     # Main HTML with three products
+├── pink-matcha.html              # Dragon Fruit product page with video
+├── cold-brew-special.html        # Cold brew product page
+├── valenio-wholesale.html        # Wholesale coffee product page
+├── README.md                     # Project documentation
 └── assets/
     ├── css/
-    │   └── style.css         # All styles including neon pulse animation
-    ├── images/               # Image assets folder
-    │   ├── hero-coffee.jpg   # Hero section image
-    │   ├── about-section.jpg # About section image
-    │   ├── hype-geencoffee.jpg # Custom about section coffee image
-    │   └── products/         # Product images
-    │       ├── espresso.jpg
-    │       ├── cappuccino.jpg
-    │       ├── cold-brew.jpg
-    │       ├── latte.jpg
-    │       ├── beans.jpg
-    │       └── pastries.jpg
-    └── js/                   # Reserved for future JavaScript
+    │   └── style.css            # Enhanced styles with improved visibility
+    ├── images/                  # Image assets folder
+    │   ├── hero-coffee.jpg      # Hero section image
+    │   ├── hype-geencoffee.jpg  # About section coffee image
+    │   └── products/            # Product images
+    └── videos/                  # Video assets for Pink Matcha
 ```
 
 ## 📱 Responsive Design & Mobile Features
@@ -146,40 +152,35 @@ hype-coffee-website/
 ### Mobile Optimizations
 - **Touch-Friendly:** Enhanced buttons and cards sized appropriately for touch interaction
 - **Scalable Graphics:** SVG logo maintains quality at all screen sizes
-- **Readable Typography:** Font sizes scale appropriately across devices
+- **Readable Typography:** Font sizes scale appropriately across devices with improved contrast
 - **Optimized Animations:** Reduced motion on mobile for better performance
 - **Fast Loading:** Lightweight CSS-only approach with optimized SVG graphics
 - **Mobile Address Link:** Tap to open Google Maps app or browser
+- **Vertical Video Support:** Responsive video container for mobile viewing
 
 ## 🚀 Recent Updates & Major Enhancements
 
-### Neon Pulse Animation (Latest Update)
-- **Black Text with White Glow:** HYPE text now displays as black with pulsing white neon glow
-- **Smooth Pulsing Effect:** 2-second animation cycle that intensifies and fades the glow
-- **Hover Enhancement:** Animation speeds up to 1 second on hover
-- **Mobile Optimized:** Reduced glow intensity on mobile for better performance
-- **Clean CSS Implementation:** Single keyframe definition without conflicts
+### Product Portfolio Optimization (Latest Update)
+- **Streamlined Selection:** Reduced from 6 to 3 core products for better focus
+- **Enhanced Product Pages:** Each product has dedicated page with detailed information
+- **Cross-Page Navigation:** Order buttons redirect to main contact form
+- **Improved Text Visibility:** Enhanced color contrast and text shadows for better readability
 
-### Mobile Navigation (Enhanced)
-- **Push Menu Implementation:** Side drawer that slides in from left
-- **Pure CSS Solution:** No JavaScript required for hamburger functionality
-- **Gradient Hamburger Lines:** Orange gradient with bouncy cubic-bezier animation
-- **Dark Overlay:** Professional overlay background when menu is active
-- **Touch Optimized:** Perfect for smartphone and tablet interaction
+### Video Integration Enhancement
+- **Pink Matcha Video:** Vertical video window (180×320px) with orange glow effects
+- **Floating Animation:** Smooth floating animation for video container
+- **Responsive Video:** Adapts to different screen sizes (200×360px tablet, 160×290px mobile)
+- **Professional Styling:** Rounded corners, shadows, and gradient borders
 
-### About Section Image (Enhanced)
-- **Custom Coffee Image:** Real coffee image replacing placeholder
-- **Glowing Effects:** Multi-layered orange glow with pulsing animation
-- **Perfect Sizing:** Responsive image sizing (300x400px desktop, smaller mobile)
-- **Static Positioning:** Removed rotation to allow comfortable reading
-- **Enhanced Styling:** Border, shadows, and hover effects
+### Text Visibility Improvements
+- **Enhanced Product Descriptions:** Improved color (`#e0e0e0`) and text shadows for better readability
+- **Contrast Optimization:** Strategic use of shadows and background colors
+- **Typography Refinements:** Better font sizing and line spacing
 
-### Footer Enhancement
-- **Google Maps Integration:** Clickable address opens in Google Maps
-- **Real Address:** Updated with actual Zurich location
-- **Hover Effects:** Orange glow and lift animation on address hover
-- **Map Icon:** Location emoji appears on hover
-- **Mobile Friendly:** Touch-optimized for smartphone map opening
+### Navigation & UX Enhancements
+- **Seamless Ordering:** Order buttons from product pages lead directly to contact form
+- **Improved Mobile Experience:** Better touch targets and responsive design
+- **Cross-Platform Consistency:** Uniform experience across all devices
 
 ## 🎬 Animation Features
 
@@ -206,6 +207,11 @@ hype-coffee-website/
 - **Gradient Overlay:** Subtle color overlay that fades in
 - **Border Highlight:** Orange border that appears on interaction
 
+### Video Window Animations
+- **Floating Effect:** Smooth up-and-down movement with rotation
+- **Glow Pulsing:** Orange glow that intensifies and fades
+- **Responsive Scaling:** Adapts animation to screen size
+
 ### Image Glow Effects
 - **Pulsing Glow:** Orange glow pulses every 3 seconds
 - **Multi-Layer Shadows:** 3 different glow intensities for realism
@@ -228,14 +234,16 @@ hype-coffee-website/
    ```bash
    mkdir hype-coffee-website
    cd hype-coffee-website
-   mkdir -p assets/css assets/images assets/js
+   mkdir -p assets/css assets/images assets/videos
    ```
 
 2. **Add Files:**
    - Copy `index.html` to root directory
+   - Copy product pages (`pink-matcha.html`, `cold-brew-special.html`, `valenio-wholesale.html`)
    - Copy `style.css` to `assets/css/`
    - Copy `README.md` to root directory
-   - Add your coffee image to `assets/images/`
+   - Add your coffee images to `assets/images/`
+   - Add video files to `assets/videos/`
 
 3. **Open in Browser:**
    - Double-click `index.html`, or
@@ -261,78 +269,79 @@ hype-coffee-website/
 - [ ] Hamburger menu functions properly on mobile
 - [ ] Neon pulse animation works smoothly
 - [ ] Image glow effects display correctly
+- [ ] Video window displays correctly (if applicable)
 - [ ] Google Maps address link works
-- [ ] All animations work smoothly
-- [ ] Contact information is updated with real business details
-- [ ] Social media links point to correct profiles
+- [ ] All product page links work correctly
+- [ ] Order buttons redirect to contact form
+- [ ] Text visibility is good on all backgrounds
 - [ ] Website displays correctly on all target devices
 
 ## 📝 Content Customization Guide
 
-### Updating the Neon Pulse Animation
-The current neon pulse animation can be customized:
+### Product Portfolio
+The website now features three core products:
 
-```css
-/* Adjust pulse speed */
-.neon-pulse {
-    animation: neonPulse 3s ease-in-out infinite; /* Change 2s to 3s for slower */
-}
+1. **Pink Matcha (Dragon Fruit)** - 15 CHF
+   - Exotic superfood powder with health benefits
+   - Features vertical video integration
+   - Preparation guide and benefits section
 
-/* Adjust glow intensity */
-.neon-pulse {
-    text-shadow:
-        0 0 5px #ffffff,    /* Inner glow */
-        0 0 10px #ffffff,   /* Medium glow */
-        0 0 20px #ffffff,   /* Outer glow */
-        0 0 40px #ffffff,   /* Extended glow */
-        0 0 80px #ffffff;   /* Maximum glow */
-}
-```
+2. **Cold Brew Special** - 6 CHF
+   - 18-hour cold brew process
+   - Detailed brewing timeline
+   - Health benefits and serving details
 
-### Updating the Custom Image
-Replace the coffee image in the about section:
+3. **Valenio Wholesale Coffee** - 35-40 CHF
+   - Professional-grade coffee beans
+   - 20+ years of expertise
+   - Video content and variety showcase
 
+### Updating Product Information
+To modify product details:
+
+1. **Main Page Cards:** Edit `index.html` product grid section
+2. **Individual Pages:** Update respective product HTML files
+3. **Pricing:** Ensure consistency between main page and product pages
+4. **Images:** Update product images in `assets/images/` folder
+
+### Video Integration
+For Pink Matcha video:
 ```html
-<!-- Current image -->
-<img id="profile-photo" src="assets/css/images/images/hype-geencoffee.jpg" alt="Green tea" class="sectione-image">
+<div class="small-video-container">
+    <video autoplay muted loop playsinline>
+        <source src="assets/videos/your-video.mp4" type="video/mp4">
+        <source src="assets/videos/your-video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</div>
 ```
 
-Replace with your own image and update the path accordingly.
-
-### Customizing the Address
-Update the Google Maps link with your location:
-
-```html
-<!-- Current address -->
-<a href="https://maps.google.com/?q=Universitätstrasse+41,+8006+Zurich,+Switzerland" target="_blank" class="address-link">
-```
-
-Replace the coordinates with your actual address.
-
-### Hamburger Menu Customization
-To change hamburger menu colors or animation:
-
+### Text Visibility Customization
+To adjust text visibility:
 ```css
-.hamburger-line {
-    background: linear-gradient(45deg, #ff8700, #ff6b00); /* Change colors here */
+.product-card p {
+    color: #e0e0e0; /* Adjust color as needed */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); /* Adjust shadow */
+    font-size: 1rem; /* Adjust size */
 }
 ```
 
 ## ✅ Testing & Quality Assurance
 
 ### Enhanced Testing Checklist
-- [ ] Neon pulse animation displays and loops correctly
-- [ ] Hamburger menu opens/closes smoothly on mobile
-- [ ] Image glow effects work without performance issues
+- [ ] All three product pages load correctly
+- [ ] Product descriptions are clearly visible
+- [ ] Video integration works (Pink Matcha)
+- [ ] Order buttons redirect to contact form
+- [ ] Mobile hamburger menu functions
+- [ ] Neon pulse animation displays correctly
+- [ ] Image glow effects work smoothly
 - [ ] Google Maps address link opens correctly
-- [ ] SVG logo displays and animates correctly
-- [ ] Enhanced product cards hover effects work smoothly
-- [ ] Glassmorphic header effect functions properly
-- [ ] All gradient backgrounds render correctly
-- [ ] Animations perform well on different devices
+- [ ] All gradient backgrounds render properly
+- [ ] Cross-page navigation works seamlessly
 
 ### Cross-Browser Testing
-Test enhanced features in:
+Test all features in:
 - [ ] **Google Chrome (latest)** - Full feature support
 - [ ] **Mozilla Firefox (latest)** - SVG and backdrop-filter support
 - [ ] **Safari (if using Mac)** - Webkit animations and iOS testing
@@ -340,63 +349,66 @@ Test enhanced features in:
 - [ ] **Mobile browsers** (iOS Safari, Chrome Mobile)
 
 ### Mobile Testing Priority
+- [ ] Three-product layout on mobile
 - [ ] Hamburger menu touch responsiveness
-- [ ] Neon pulse animation performance on mobile
-- [ ] Image glow effects don't cause lag
+- [ ] Video window responsive behavior
+- [ ] Order button functionality
+- [ ] Text readability on small screens
 - [ ] Address link opens maps app properly
-- [ ] All animations work smoothly on various device sizes
 
 ### Performance Testing
-- [ ] SVG graphics load quickly
-- [ ] Animations don't impact page performance
-- [ ] Backdrop filters work without lag
-- [ ] Enhanced shadows don't slow down interactions
-- [ ] Mobile hamburger menu transitions are smooth
+- [ ] Page loading speed with all assets
+- [ ] Video loading and playback
+- [ ] Animation performance on mobile
+- [ ] CSS transitions smoothness
+- [ ] Image optimization and loading
 
 ## 🔄 Future Enhancement Opportunities
 
 ### Planned Website Improvements
-- **Interactive Menu System:** Full online ordering with cart functionality
-- **Customer Reviews Section:** Testimonials with star ratings and photos
+- **E-commerce Integration:** Full online shopping cart and payment processing
+- **Customer Reviews:** Product reviews and ratings system
 - **Blog Section:** Coffee education and company news
-- **Loyalty Program:** Digital punch card system
+- **Loyalty Program:** Digital rewards system
 - **Live Chat:** Customer service integration
+- **Multi-language Support:** English/German/French versions
 
 ### Technical Upgrades
-- **JavaScript Enhancements:** More complex animations and interactions
 - **Progressive Web App:** Offline functionality and app-like experience
-- **Payment Integration:** Stripe or PayPal for online orders
-- **CMS Integration:** Content management for easy updates
-- **Performance Optimization:** Advanced image loading and caching
+- **Advanced Analytics:** Detailed user behavior tracking
+- **Content Management System:** Easy content updates
+- **API Integration:** Real-time inventory and pricing
+- **Advanced Video Features:** Multiple video formats and quality options
 
-### Animation Enhancements
-- **Parallax Effects:** Background elements that move on scroll
-- **Micro-interactions:** Subtle animations on form elements
-- **Loading Animations:** Custom loading screens
-- **3D Elements:** CSS 3D transforms for product showcases
+### Product Expansion
+- **Seasonal Products:** Limited-time offerings
+- **Coffee Subscription:** Monthly coffee delivery service
+- **Merchandise:** Branded coffee accessories
+- **Virtual Coffee Classes:** Online brewing workshops
+- **Corporate Packages:** Business coffee solutions
 
 ## 🏆 Academic Standards Compliance
 
-This project fully meets all specified requirements with major enhancements:
+This project fully meets all specified requirements with significant enhancements:
 
 ### Learning Outcome 1: Design (✅ Enhanced)
-- [x] 1.1 Advanced navigation with animated SVG logo and mobile hamburger menu
-- [x] 1.2 Superior accessibility with scalable graphics and touch-friendly interface
-- [x] 1.3 Exceptional UX with neon pulse animations, glow effects, and smooth interactions
-- [x] 1.4 Backdrop never distracts (glassmorphic effects with purpose)
-- [x] 1.5 Consistent enhanced graphics and gradient scheme throughout
-- [x] 1.6 User-controlled interactions with smooth feedback and animations
+- [x] 1.1 Advanced three-product navigation with animated SVG logo and mobile hamburger menu
+- [x] 1.2 Superior accessibility with improved text visibility and touch-friendly interface
+- [x] 1.3 Exceptional UX with neon pulse animations, video integration, and smooth interactions
+- [x] 1.4 Professional backdrop with purposeful glassmorphic effects
+- [x] 1.5 Consistent enhanced graphics and gradient scheme throughout all pages
+- [x] 1.6 User-controlled interactions with comprehensive feedback and cross-page navigation
 
 ### Learning Outcome 2: Implementation (✅ Advanced)
-- [x] 2.1 Website with enhanced interactive sections and mobile navigation
-- [x] 2.2 Advanced HTML with inline SVG graphics and structured content
-- [x] 2.3 Sophisticated CSS with gradients, animations, and responsive design
-- [x] 2.4 Scalable SVG graphics structure with custom animations
+- [x] 2.1 Multi-page website with three detailed product pages and enhanced interactivity
+- [x] 2.2 Advanced HTML with inline SVG graphics, video integration, and structured content
+- [x] 2.3 Sophisticated CSS with improved text visibility, gradients, and responsive design
+- [x] 2.4 Scalable SVG graphics with custom animations and video containers
 - [x] 2.5 Enhanced external link styling with Google Maps integration
-- [x] 2.6 Advanced responsive design with mobile-first hamburger menu
-- [x] 2.7 Semantic HTML with proper SVG integration and accessibility
-- [x] 2.8 Real content with enhanced visual appeal and custom imagery
-- [x] 2.9 Intuitive navigation with visual feedback and mobile optimization
+- [x] 2.6 Advanced responsive design with mobile-first hamburger menu and video support
+- [x] 2.7 Semantic HTML across all pages with proper SVG integration and accessibility
+- [x] 2.8 Real content with enhanced visual appeal, custom imagery, and video content
+- [x] 2.9 Intuitive cross-page navigation with visual feedback and mobile optimization
 
 ## 📍 Business Information
 
@@ -410,6 +422,11 @@ This project fully meets all specified requirements with major enhancements:
   - Monday - Friday: 7:30 AM - 6:00 PM
   - Saturday - Sunday: 9:00 AM - 4:00 PM
 
+### Product Pricing
+- **Pink Matcha (Dragon Fruit):** 15 CHF (50g)
+- **Cold Brew Special:** 6 CHF (16oz)
+- **Valenio Wholesale Coffee:** 35-40 CHF (per kg)
+
 ### Social Media
 - **Instagram:** @hype_specialty_coffee
 - **Facebook:** [Coming Soon]
@@ -418,16 +435,17 @@ This project fully meets all specified requirements with major enhancements:
 ## 📞 Support & Contact Information
 
 ### Technical Support
-For questions about the enhanced website features:
-- **Neon Pulse Animation:** Complex CSS keyframes with pulsing glow effects
-- **Hamburger Menu:** Pure CSS mobile navigation implementation
-- **Image Effects:** Multi-layer glow and animation techniques
-- **SVG Customization:** Detailed comments in HTML for logo modifications
-- **Responsive Design:** Clear breakpoint documentation
-- **Performance:** Optimization notes throughout CSS
+For questions about website features:
+- **Product Pages:** Individual product showcases with detailed information
+- **Video Integration:** Vertical video window with responsive design
+- **Text Visibility:** Enhanced contrast and shadow techniques
+- **Cross-Page Navigation:** Seamless order flow from products to contact
+- **Mobile Optimization:** Touch-friendly interface with improved readability
 
 ### Development Notes
-- **Mobile-First Approach:** All new features designed for mobile first
+- **Three-Product Focus:** Streamlined portfolio for better user experience
+- **Enhanced Visibility:** Improved text contrast and readability across all devices
+- **Video Integration:** Professional video presentation with floating animations
 - **Pure CSS Implementation:** Minimal JavaScript dependencies for core functionality
 - **Performance Optimized:** Efficient animations and scalable graphics
 - **Well-Documented:** Comprehensive comments for easy maintenance
@@ -442,33 +460,36 @@ For questions about the enhanced website features:
 
 ### Custom Development
 - **SVG Graphics:** Hand-crafted logo and illustrations
+- **Video Integration:** Custom vertical video window with animations
+- **Enhanced Text Visibility:** Improved contrast and shadow techniques
 - **Neon Pulse Animation:** Custom CSS keyframes with pulsing glow effects
 - **Hamburger Menu:** Pure CSS push menu implementation
 - **Glow Effects:** Multi-layer shadow techniques
-- **Enhanced Animations:** Custom CSS keyframes and transitions
-- **Gradient Design:** Original color schemes and visual effects
-- **Responsive Layout:** Mobile-first approach with scalable elements
+- **Product Portfolio:** Streamlined three-product showcase
+- **Cross-Page Navigation:** Seamless order flow implementation
+- **Responsive Design:** Mobile-first approach with scalable elements
 
 ### Code Quality Standards
-- **Clean Code:** Enhanced readability and maintainability
-- **Advanced Documentation:** Comprehensive commenting for all new features
-- **Modern CSS:** Latest features like backdrop-filter and animation-timeline
-- **Performance Optimized:** Efficient animations and scalable graphics
-- **Mobile Optimized:** Touch-friendly interface with smooth interactions
+- **Clean Code:** Enhanced readability and maintainability across all pages
+- **Advanced Documentation:** Comprehensive commenting for all features
+- **Modern CSS:** Latest features including improved text visibility techniques
+- **Performance Optimized:** Efficient animations and video integration
+- **Mobile Optimized:** Touch-friendly interface with enhanced readability
 
 ---
 
-**Project Status:** Production Ready with Advanced Features  
+**Project Status:** Production Ready with Enhanced Features  
 **Last Updated:** January 2025  
-**Version:** 4.0 (Neon Pulse Animation Edition)
+**Version:** 5.0 (Three-Product Portfolio Edition)
 
-© 2024 HYPE Specialty Coffee. Website designed and developed with passion for great coffee, good vibes, mobile-first design, and cutting-edge web technology.
+© 2024 HYPE Specialty Coffee. Website designed and developed with passion for great coffee, good vibes, streamlined product focus, and cutting-edge web technology.
 
 ### Key Features Summary:
-✅ **Mobile hamburger menu** (push drawer style)  
-✅ **Neon pulse animation** for "HYPE" text with black text and white glow  
-✅ **Custom coffee image** with glowing effects  
-✅ **Clickable Google Maps** address integration  
+✅ **Three-product portfolio** (Pink Matcha, Cold Brew, Valenio Wholesale)  
+✅ **Enhanced text visibility** with improved contrast and shadows  
+✅ **Video integration** with vertical video window in Pink Matcha  
+✅ **Cross-page navigation** with order buttons leading to contact form  
+✅ **Mobile hamburger menu** with touch-friendly interface  
+✅ **Neon pulse animation** for brand identity  
 ✅ **Fully responsive design** optimized for all devices  
-✅ **Pure CSS implementation** (minimal JavaScript required)  
-✅ **Production-ready** for deployment
+✅ **Production-ready** for immediate deployment
