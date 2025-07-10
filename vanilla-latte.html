@@ -113,23 +113,24 @@
 
         .product-image-section {
             text-align: center;
+            position: relative;
         }
 
         .product-image-large {
             width: 400px;
             height: 400px;
-            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            background: linear-gradient(135deg, #ff1493, #ff69b4);
             border-radius: 50%;
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #2a2a2a;
+            color: #ffffff;
             font-weight: bold;
             font-size: 2rem;
             box-shadow:
-                0 0 30px rgba(255, 135, 0, 0.6),
-                0 0 60px rgba(255, 135, 0, 0.4),
+                0 0 30px rgba(255, 20, 147, 0.6),
+                0 0 60px rgba(255, 105, 180, 0.4),
                 0 20px 40px rgba(0, 0, 0, 0.3);
             animation: productGlow 3s ease-in-out infinite;
         }
@@ -139,17 +140,55 @@
             0%,
             100% {
                 box-shadow:
-                    0 0 30px rgba(255, 135, 0, 0.6),
-                    0 0 60px rgba(255, 135, 0, 0.4),
+                    0 0 30px rgba(255, 20, 147, 0.6),
+                    0 0 60px rgba(255, 105, 180, 0.4),
                     0 20px 40px rgba(0, 0, 0, 0.3);
             }
 
             50% {
                 box-shadow:
-                    0 0 40px rgba(255, 135, 0, 0.8),
-                    0 0 80px rgba(255, 135, 0, 0.6),
+                    0 0 40px rgba(255, 20, 147, 0.8),
+                    0 0 80px rgba(255, 105, 180, 0.4),
+                    0 0 120px rgba(255, 20, 147, 0.3),
                     0 20px 40px rgba(0, 0, 0, 0.3);
             }
+        }
+
+        /* Small Video Window */
+        .small-video-container {
+            position: absolute;
+            bottom: -60px;
+            right: -60px;
+            width: 180px;
+            height: 320px;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow:
+                0 0 25px rgba(255, 135, 0, 0.7),
+                0 0 50px rgba(255, 135, 0, 0.4),
+                0 15px 40px rgba(0, 0, 0, 0.5);
+            border: 4px solid rgba(255, 135, 0, 0.9);
+            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            animation: videoFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes videoFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-12px) rotate(2deg);
+            }
+        }
+
+        .small-video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 21px;
         }
 
         .product-info {
@@ -178,6 +217,225 @@
             font-size: 1.3rem;
             line-height: 1.8;
             margin-bottom: 2rem;
+        }
+
+        /* Dragon Fruit Benefits Section */
+        .benefits-section {
+            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 4rem 0;
+            border: 2px solid rgba(255, 135, 0, 0.3);
+        }
+
+        .benefits-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            color: #ff8700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 135, 0, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 135, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 135, 0, 0.2);
+        }
+
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            color: #2a2a2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .benefit-title {
+            font-weight: bold;
+            color: #ff8700;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Preparation Guide */
+        .preparation-section {
+            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 4rem 0;
+            color: #2a2a2a;
+        }
+
+        .preparation-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .prep-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .prep-step {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(42, 42, 42, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(42, 42, 42, 0.2);
+        }
+
+        .prep-step-icon {
+            width: 60px;
+            height: 60px;
+            background: #2a2a2a;
+            color: #ff8700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .prep-step-title {
+            font-weight: bold;
+            color: #2a2a2a;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Order Section */
+        .order-section {
+            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+            color: #2a2a2a;
+        }
+
+        .order-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .order-button {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .order-button:hover {
+            background: #000000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(0deg, #ff8700 0%, #000000 100%);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-content p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .product-hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .product-image-large {
+                width: 300px;
+                height: 300px;
+                font-size: 1.5rem;
+            }
+
+            .small-video-container {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                margin: 2rem auto 0;
+                width: 200px;
+                height: 360px;
+            }
+
+            .product-title {
+                font-size: 2.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .prep-steps {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding: 100px 15px 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .product-image-large {
+                width: 250px;
+                height: 250px;
+                font-size: 1.2rem;
+            }
+
+            .small-video-container {
+                width: 160px;
+                height: 290px;
+            }
+
+            .benefits-section {
+                padding: 2rem 1rem;
+            }
+
+            .preparation-section {
+                padding: 2rem 1rem;
+            }
         }
     </style>
 </head>
