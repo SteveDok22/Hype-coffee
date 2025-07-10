@@ -93,6 +93,92 @@
             border-color: #ffffff;
             transform: translateY(-2px);
         }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 20px;
+        }
+
+        /* Product Hero Section */
+        .product-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+            padding: 2rem 0;
+        }
+
+        .product-image-section {
+            text-align: center;
+        }
+
+        .product-image-large {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #8B4513, #654321);
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 2rem;
+            box-shadow:
+                0 0 30px rgba(139, 69, 19, 0.6),
+                0 0 60px rgba(139, 69, 19, 0.4),
+                0 20px 40px rgba(0, 0, 0, 0.3);
+            animation: productGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes productGlow {
+
+            0%,
+            100% {
+                box-shadow:
+                    0 0 30px rgba(139, 69, 19, 0.6),
+                    0 0 60px rgba(139, 69, 19, 0.4),
+                    0 20px 40px rgba(0, 0, 0, 0.3);
+            }
+
+            50% {
+                box-shadow:
+                    0 0 40px rgba(139, 69, 19, 0.8),
+                    0 0 80px rgba(139, 69, 19, 0.6),
+                    0 20px 40px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .product-info {
+            padding: 2rem;
+        }
+
+        .product-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 3.5rem;
+            color: #ff8700;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff8700;
+            background: rgba(255, 135, 0, 0.1);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .product-description {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 
