@@ -77,8 +77,8 @@
         }
 
         .back-button {
-            background: #ff8700;
-            color: #2a2a2a;
+            background: #000000;
+            color: #ff8700;
             padding: 0.8rem 1.5rem;
             text-decoration: none;
             border-radius: 25px;
@@ -157,9 +157,9 @@
         /* Small Video Window */
         .small-video-container {
             position: absolute;
-            bottom: -60px;
+            bottom: -150px;
             right: -60px;
-            width: 180px;
+            width: 185px;
             height: 320px;
             border-radius: 25px;
             overflow: hidden;
@@ -280,7 +280,7 @@
 
         /* Preparation Guide */
         .preparation-section {
-            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            background: linear-gradient(135deg, #ff6b00, #ff1493);
             padding: 3rem;
             border-radius: 20px;
             margin: 4rem 0;
@@ -332,7 +332,7 @@
 
         /* Order Section */
         .order-section {
-            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            background: linear-gradient(135deg, #ff1493, #ff6b00);
             padding: 3rem;
             border-radius: 20px;
             text-align: center;
@@ -466,32 +466,40 @@
 
     <!-- Main Content -->
     <main>
+
         <!-- Product Hero Section -->
         <section class="product-hero">
             <div class="product-image-section">
-                <div class="product-image-large">🐉 Pink Matcha</div>
+                <img src="assets/css/images/images/pink powder.jpg" alt="Pink Matcha Dragon Fruit Powder"
+                    class="product-image-large" onerror="this.style.display='none'">
+
+                <!-- Small Video Window -->
+                <div class="small-video-container">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/css/videos/Matcha video.MP4" type="video/mp4">
+                        <source src="your-video.webm" type="video/webm">
+                    </video>
+                </div>
             </div>
-            <!-- Small Video Window -->
-            <div class="small-video-container">
-                <video autoplay muted loop playsinline>
-                    <source src="your-video.mp4" type="video/mp4">
-                    <source src="your-video.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+
             <div class="product-info">
-                <h1 class="product-title">Pink Matcha</h1>
-                <div class="product-price">15 CHF - 50gr.</div>
-                <p class="product-description">
-                    Experience the magic of Dragon Fruit transformed into "Pink Matcha" through advanced freeze-drying
-                    technology. This exotic superfood powder retains all the beneficial nutrients while delivering an
-                    intense pink-purple color that's as stunning as it is delicious.
-                </p>
-                <p class="product-description">
-                    Rich in vitamins, minerals, fibers, and antioxidants, our Pink Matcha offers a taste between kiwi
-                    and pear. Perfect for creating Instagram-worthy drinks, smoothies, desserts, and cocktails with its
-                    vibrant natural coloring.
-            </div>
+                <div class="product-info">
+                    <h1 class="product-title">Pink Matcha</h1>
+                    <div class="product-price">15 CHF - 50gr.</div>
+                    <p class="product-description">
+                        Experience the magic of Dragon Fruit transformed into "Pink Matcha" through advanced
+                        freeze-drying
+                        technology. This exotic superfood powder retains all the beneficial nutrients while delivering
+                        an
+                        intense pink-purple color that's as stunning as it is delicious.
+                    </p>
+                    <p class="product-description">
+                        Rich in vitamins, minerals, fibers, and antioxidants, our Pink Matcha offers a taste between
+                        kiwi
+                        and pear. Perfect for creating Instagram-worthy drinks, smoothies, desserts, and cocktails with
+                        its
+                        vibrant natural coloring.
+                </div>
         </section>
 
         <!-- Dragon Fruit Benefits Section -->
