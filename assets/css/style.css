@@ -231,6 +231,10 @@ main {
     padding: 20px;
 }
 
+#about {
+    scroll-margin-top: 106px;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -339,7 +343,7 @@ main {
 
 /* Section Styles */
 section {
-    margin: 100px 0;
+    margin: 40px 0;
     padding: 2rem 0;
 }
 
@@ -349,6 +353,12 @@ section {
     color: #ff8700;
     text-align: center;
     margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        margin: 20px 0;
+    }
 }
 
 /* About Section */
@@ -508,6 +518,8 @@ section {
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-card::before {
@@ -530,6 +542,7 @@ section {
     transform: translateY(-15px);
     border-color: #ff8700;
     box-shadow: 0 20px 40px rgba(255, 135, 0, 0.2);
+    text-decoration: none;
 }
 
 .product-image {
@@ -857,18 +870,19 @@ footer {
     }
 }
 
-.autoRotate {
-    animation: autoRotateAnimation;
-    animation-timeline: view();
+.coffee-cup-placeholder {
+    animation: gentleFloat 4s ease-in-out infinite;
 }
 
-@keyframes autoRotateAnimation {
-    from {
-        transform: rotate(0deg);
+@keyframes gentleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0px);
     }
 
-    to {
-        transform: rotate(360deg);
+    50% {
+        transform: translateY(-10px);
     }
 }
 
