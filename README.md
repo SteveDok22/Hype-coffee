@@ -2,14 +2,6 @@
 
 A modern, responsive website for HYPE specialty coffee shop, designed to showcase premium coffee products and create an engaging online presence for coffee enthusiasts.
 
-## 🎯 Project Overview
-
-**Purpose:** Create a professional online presence for HYPE specialty coffee shop that attracts customers, showcases our products, and provides easy contact/ordering functionality.
-
-[See deployed website](https://stevedok22.github.io/Hype-co)
-
-![Responsive Mockup](assets/media/.jpg)                  
-
 # Table of Contents
 
 - [Project Overview](#project-overview)
@@ -25,6 +17,14 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - [Future Enhancement Opportunities](#future-enhancement-opportunities)
 - [Business Information](#business-information)
 - [Credits & Attribution](#credits--attribution)
+
+## 🎯 Project Overview
+
+**Purpose:** Create a professional online presence for HYPE specialty coffee shop that attracts customers, showcases our products, and provides easy contact/ordering functionality.
+
+[See deployed website](https://stevedok22.github.io/Hype-co)
+
+![Responsive Mockup](assets/media/.jpg)                  
 
 **Target Audience:** 
 - Coffee enthusiasts seeking specialty brews
