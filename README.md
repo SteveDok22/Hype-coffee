@@ -6,7 +6,7 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 
 **Purpose:** Create a professional online presence for HYPE specialty coffee shop that attracts customers, showcases our products, and provides easy contact/ordering functionality.
 
-[See deployed website](https://stevedok22.github.io/Hype-coffee/)
+[See deployed website](https://stevedok22.github.io/Hype-co)
 
 ![Responsive Mockup](assets/media/.jpg)                  
 
