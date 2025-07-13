@@ -10,10 +10,21 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 
 ![Responsive Mockup](assets/media/.jpg)                  
 
-## Table of content
+# Table of Contents
 
 - [Project Overview](#project-overview)
+- [Website Features](#website-features)
 - [Design and User Experience](#design-and-user-experience)
+- [Technical Implementation](#technical-implementation)
+- [Responsive Design & Mobile Features](#responsive-design--mobile-features)
+- [Recent Updates & Major Enhancements](#recent-updates--major-enhancements)
+- [Animation Features](#animation-features)
+- [Deployment Instructions](#deployment-instructions)
+- [Content Customization Guide](#content-customization-guide)
+- [Testing & Quality Assurance](#testing--quality-assurance)
+- [Future Enhancement Opportunities](#future-enhancement-opportunities)
+- [Business Information](#business-information)
+- [Credits & Attribution](#credits--attribution)
 
 **Target Audience:** 
 - Coffee enthusiasts seeking specialty brews
