@@ -202,253 +202,255 @@
                 height: 360px;
                 overflow: hidden;
             }
+        }
 
-            .product-info {
-                padding: 2rem;
+        .product-info {
+            padding: 2rem;
+        }
+
+        .product-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 3.5rem;
+            color: #ff8700;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff8700;
+            background: rgba(255, 135, 0, 0.1);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .product-description {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* Dragon Fruit Benefits Section */
+        .benefits-section {
+            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 4rem 0;
+            border: 2px solid rgba(255, 135, 0, 0.3);
+        }
+
+        .benefits-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            color: #ff8700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 135, 0, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 135, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 135, 0, 0.2);
+        }
+
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff8700, #ff6b00);
+            color: #2a2a2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .benefit-title {
+            font-weight: bold;
+            color: #ff8700;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Preparation Guide */
+        .preparation-section {
+            background: linear-gradient(135deg, #ff6b00, #ff1493);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 4rem 0;
+            color: #2a2a2a;
+        }
+
+        .preparation-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .prep-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .prep-step {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(42, 42, 42, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(42, 42, 42, 0.2);
+        }
+
+        .prep-step-icon {
+            width: 60px;
+            height: 60px;
+            background: #2a2a2a;
+            color: #ff8700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .prep-step-title {
+            font-weight: bold;
+            color: #2a2a2a;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Order Section */
+        .order-section {
+            background: linear-gradient(135deg, #ff1493, #ff6b00);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+            color: #2a2a2a;
+        }
+
+        .order-title {
+            font-family: "Odibee Sans", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .order-button {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .order-button:hover {
+            background: #000000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(0deg, #ff8700 0%, #000000 100%);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-content p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .product-hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .product-image-large {
+                width: 300px;
+                height: 300px;
+                font-size: 1.5rem;
+            }
+
+            .small-video-container {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                margin: 2rem auto 0;
+                width: 209px;
+                height: 360px;
             }
 
             .product-title {
-                font-family: "Odibee Sans", sans-serif;
-                font-size: 3.5rem;
-                color: #ff8700;
-                margin-bottom: 1rem;
-            }
-
-            .product-price {
-                font-size: 2rem;
-                font-weight: bold;
-                color: #ff8700;
-                background: rgba(255, 135, 0, 0.1);
-                padding: 1rem 2rem;
-                border-radius: 50px;
-                display: inline-block;
-                margin-bottom: 2rem;
-            }
-
-            .product-description {
-                font-size: 1.3rem;
-                line-height: 1.8;
-                margin-bottom: 2rem;
-            }
-
-            /* Dragon Fruit Benefits Section */
-            .benefits-section {
-                background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
-                padding: 3rem;
-                border-radius: 20px;
-                margin: 4rem 0;
-                border: 2px solid rgba(255, 135, 0, 0.3);
-            }
-
-            .benefits-title {
-                font-family: "Odibee Sans", sans-serif;
                 font-size: 2.5rem;
-                color: #ff8700;
-                margin-bottom: 2rem;
-                text-align: center;
             }
 
             .benefits-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 2rem;
-                margin-top: 2rem;
-            }
-
-            .benefit-item {
-                text-align: center;
-                padding: 2rem;
-                background: rgba(255, 135, 0, 0.05);
-                border-radius: 15px;
-                border: 1px solid rgba(255, 135, 0, 0.2);
-                transition: all 0.3s ease;
-            }
-
-            .benefit-item:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 25px rgba(255, 135, 0, 0.2);
-            }
-
-            .benefit-icon {
-                width: 60px;
-                height: 60px;
-                background: linear-gradient(135deg, #ff8700, #ff6b00);
-                color: #2a2a2a;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: bold;
-                font-size: 1.5rem;
-                margin: 0 auto 1rem;
-            }
-
-            .benefit-title {
-                font-weight: bold;
-                color: #ff8700;
-                margin-bottom: 0.5rem;
-                font-size: 1.2rem;
-            }
-
-            /* Preparation Guide */
-            .preparation-section {
-                background: linear-gradient(135deg, #ff6b00, #ff1493);
-                padding: 3rem;
-                border-radius: 20px;
-                margin: 4rem 0;
-                color: #2a2a2a;
-            }
-
-            .preparation-title {
-                font-family: "Odibee Sans", sans-serif;
-                font-size: 2.5rem;
-                margin-bottom: 2rem;
-                text-align: center;
+                grid-template-columns: 1fr;
             }
 
             .prep-steps {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 2rem;
-                margin-top: 2rem;
+                grid-template-columns: 1fr;
             }
 
-            .prep-step {
-                text-align: center;
-                padding: 2rem;
-                background: rgba(42, 42, 42, 0.1);
-                border-radius: 15px;
-                border: 1px solid rgba(42, 42, 42, 0.2);
+            main {
+                padding: 100px 15px 15px;
             }
+        }
 
-            .prep-step-icon {
-                width: 60px;
-                height: 60px;
-                background: #2a2a2a;
-                color: #ff8700;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: bold;
-                font-size: 1.5rem;
-                margin: 0 auto 1rem;
-            }
-
-            .prep-step-title {
-                font-weight: bold;
-                color: #2a2a2a;
-                margin-bottom: 0.5rem;
+        @media screen and (max-width: 480px) {
+            .product-image-large {
+                width: 250px;
+                height: 250px;
                 font-size: 1.2rem;
             }
 
-            /* Order Section */
-            .order-section {
-                background: linear-gradient(135deg, #ff1493, #ff6b00);
-                padding: 3rem;
-                border-radius: 20px;
-                text-align: center;
-                margin: 4rem 0;
-                color: #2a2a2a;
+            .small-video-container {
+                width: 168px;
+                height: 290px;
             }
 
-            .order-title {
-                font-family: "Odibee Sans", sans-serif;
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
+            .benefits-section {
+                padding: 2rem 1rem;
             }
 
-            .order-button {
-                background: #2a2a2a;
-                color: #ffffff;
-                padding: 1.2rem 2.5rem;
-                text-decoration: none;
-                border-radius: 50px;
-                font-weight: bold;
-                font-size: 1.2rem;
-                transition: all 0.3s ease;
-                display: inline-block;
-                margin-top: 1rem;
+            .preparation-section {
+                padding: 2rem 1rem;
             }
-
-            .order-button:hover {
-                background: #000000;
-                transform: translateY(-3px);
-                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            }
-
-            /* Footer */
-            footer {
-                background: linear-gradient(0deg, #ff8700 0%, #000000 100%);
-                padding: 2rem;
-                text-align: center;
-                margin-top: 4rem;
-            }
-
-            .footer-content p {
-                margin: 0;
-            }
-
-            /* Responsive Design */
-            @media screen and (max-width: 768px) {
-                .product-hero {
-                    grid-template-columns: 1fr;
-                    text-align: center;
-                    gap: 2rem;
-                }
-
-                .product-image-large {
-                    width: 300px;
-                    height: 300px;
-                    font-size: 1.5rem;
-                }
-
-                .small-video-container {
-                    position: relative;
-                    bottom: auto;
-                    right: auto;
-                    margin: 2rem auto 0;
-                    width: 209px;
-                    height: 360px;
-                }
-
-                .product-title {
-                    font-size: 2.5rem;
-                }
-
-                .benefits-grid {
-                    grid-template-columns: 1fr;
-                }
-
-                .prep-steps {
-                    grid-template-columns: 1fr;
-                }
-
-                main {
-                    padding: 100px 15px 15px;
-                }
-            }
-
-            @media screen and (max-width: 480px) {
-                .product-image-large {
-                    width: 250px;
-                    height: 250px;
-                    font-size: 1.2rem;
-                }
-
-                .small-video-container {
-                    width: 168px;
-                    height: 290px;
-                }
-
-                .benefits-section {
-                    padding: 2rem 1rem;
-                }
-
-                .preparation-section {
-                    padding: 2rem 1rem;
-                }
-            }
+        }
+    
     </style>
 </head>
 
@@ -472,7 +474,7 @@
                 </svg>
                 <div class="logo">HYPE</div>
             </div>
-            <a href="javascript:window.close()" class="back-button">← Back to Menu</a>
+            <a href="index.html" class="back-button">← Back to Menu</a>
         </div>
     </header>
 
