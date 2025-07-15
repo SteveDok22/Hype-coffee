@@ -25,7 +25,7 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 
 [See deployed website](https://stevedok22.github.io/Hype-coffee/)
 
-![Responsive Mockup](assets/media/.jpg)                  
+![Product Pages Grid](assets/css/Sceenshots/ScreenshotDevices.png)                  
 
 **Target Audience:** 
 - Coffee enthusiasts seeking specialty brews
