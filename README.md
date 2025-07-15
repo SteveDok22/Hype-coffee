@@ -45,8 +45,9 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 
 ### Core Functionality
 - **Animated SVG Logo:** Custom coffee cup logo with animated steam effects in the header
+(Custom coffee cup logo with animated steam and pulsing "HYPE" neon text)
 ![Neon Logo Animation](assets/css/Sceenshots/neon-logo2.png)
-Custom coffee cup logo with animated steam and pulsing "HYPE" neon text
+![Neon Logo Animation](assets/css/Sceenshots/neon-logo-animation.png)
 - **Enhanced Header:** Glassmorphic design with backdrop blur and smooth hover transitions
 - **Mobile Hamburger Menu:** Push menu (side drawer) with orange gradient animations for perfect mobile navigation
 - **Premium Product Cards:** Gradient backgrounds with sophisticated hover animations and improved text visibility
