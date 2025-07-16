@@ -382,13 +382,13 @@ To adjust text visibility:
 
 - [x] **Main HTML**  
   - First try gave me an error:  
-    ![ValidatorError](assets/css/Sceenshots/Html CheckerPROBLEM.png)
+    ![ValidatorError](assets/css/Sceenshots/HtmlPROBLEM.png)
   - Second try successfully fixed:  
     ![Validator success](assets/css/Sceenshots/mainHTML.png)
 
 - [x] **CSS**  
   - First try gave me an error:  
-    ![ValidatorError](assets/css/Sceenshots/W3C CSS Validator resultsPROBLEM.png)
+    ![ValidatorError](assets/css/Sceenshots/CSSPROBLEM.png)
   - Second try successfully fixed:  
     ![Validator success](assets/css/Sceenshots/mainCSS.png)
 
