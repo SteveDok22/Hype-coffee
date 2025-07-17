@@ -2,7 +2,7 @@
 
 A modern, responsive website for HYPE specialty coffee shop, designed to showcase premium coffee products and create an engaging online presence for coffee enthusiasts.
 
-# Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Website Features](#website-features)
@@ -17,15 +17,21 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - [Future Enhancement Opportunities](#future-enhancement-opportunities)
 - [Business Information](#business-information)
 - [Credits & Attribution](#credits--attribution)
-- [References & Learning Resources](#-references--learning-resources)
+- [References & Learning Resources](#references--learning-resources)
 
 ## Project Overview
 
 **Purpose:** Create a professional online presence for HYPE specialty coffee shop that attracts customers, showcases our products, and provides easy contact/ordering functionality.
 
-[See deployed website](https://stevedok22.github.io/Hype-coffee/)
+**Live Website:** [See deployed website](https://stevedok22.github.io/Hype-coffee/)
 
-![Product Pages Grid](assets/css/Sceenshots/ScreenshotDevices2.png)                  
+<div align="center">
+
+![Product Pages Grid](assets/css/Sceenshots/ScreenshotDevices.png)
+
+*HYPE Coffee website displayed across multiple devices - showcasing responsive design*
+
+</div>
 
 **Target Audience:** 
 - Coffee enthusiasts seeking specialty brews
@@ -49,9 +55,9 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 
 #### Animated Logo and Branding
 
-| Logo Animation | Neon Logo Efect & Animation |
+| Neon Logo Effect | Logo Animation |
 |------------------|----------------|
-| ![Neon Logo Animation](assets/css/Sceenshots/neon-logo2.png) | ![Neon Logo Animation](assets/css/Sceenshots/logoanimation.png) |
+| ![Neon Logo Animation](assets/css/Sceenshots/neon-logo2.png) | ![Neon Logo Animation](assets/css/Sceenshots/neon-logo-animation.png) |
 
 *Custom SVG coffee cup logo with animated steam effects and pulsing "HYPE" neon text*
 
@@ -153,7 +159,15 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 ## Design & Branding
 
 ### Color Palette
+
+<div align="center">
+
 ![Color Palette in Action](assets/css/Sceenshots/color-palette-usage.png)
+
+*HYPE's signature orange and black color scheme implemented throughout the website*
+
+</div>
+
 Based on HYPE's brand identity:
 - **Primary Orange:** `#ff8700` (Main brand color)
 - **Secondary Orange:** `#ff6b00` (Accent and hover states)
@@ -170,18 +184,39 @@ Based on HYPE's brand identity:
 - **Font Loading:** Google Fonts with display=swap for optimal performance
 
 ### Visual Design Principles
+
+<div align="center">
+
+#### Design Elements Showcase
+
+| Modern Aesthetic | Card-Based Layout |
+|------------------|------------------|
+| ![Design Elements Grid](assets/css/Sceenshots/design-elements1.2.png) | ![Design Elements Grid](assets/css/Sceenshots/design-elements1.png) |
+
+| Neon Effects | Visual Hierarchy |
+|--------------|------------------|
+| ![Design Elements Grid](assets/css/Sceenshots/design-elements6.png) | ![Design Elements Grid](assets/css/Sceenshots/design-elements2.png) |
+
+*Visual design system showcasing modern aesthetic, premium cards, neon effects, and clear hierarchy*
+
+</div>
+
 - **Modern Aesthetic:** Clean, contemporary design with rounded corners and gradients
 - **SVG Integration:** Custom scalable graphics for logo and illustrations
-![Design Elements Grid](assets/css/Sceenshots/design-elements1.2.png)
-![Design Elements Grid](assets/css/Sceenshots/design-elements1.png)
 - **Card-Based Layout:** Enhanced product information presented in premium-style cards
+
+<div align="center">
+
 ![Design Elements Grid](assets/css/Sceenshots/design-elements3.png)
+
+*Consistent spacing and improved readability with proper contrast and shadows*
+
+</div>
+
 - **Neon Effects:** Dynamic pulsing glow effects that bring energy to the brand
-![Design Elements Grid](assets/css/Sceenshots/design-elements6.png)
 - **Glowing Effects:** Subtle light effects that enhance visual appeal
 - **Consistent Spacing:** Harmonious spacing and padding throughout
 - **Visual Hierarchy:** Clear information hierarchy using typography, color, and animation
-![Design Elements Grid](assets/css/Sceenshots/design-elements2.png)
 - **Improved Readability:** Enhanced text visibility with proper contrast and shadows
 
 ## Technical Implementation
@@ -234,12 +269,23 @@ hype-coffee-website/
 - **Auto-Hide:** Desktop navigation hidden on mobile, hamburger shown only on mobile
 
 ### Breakpoint Strategy
+
+<div align="center">
+
+#### Cross-Device Compatibility Testing
+
+| Desktop (1024px+) | Tablet (768px - 1023px) | Mobile (767px and below) |
+|-------------------|-------------------------|-------------------------|
+| ![Device Testing](assets/css/Sceenshots/device-compatibility4.png) | ![Device Testing](assets/css/Sceenshots/device-compatibility3.png) | ![Device Testing](assets/css/Sceenshots/device-compatibility1.png) |
+| **Full layout with side-by-side content** | **Adjusted spacing with hamburger menu** | **Stacked layout with compact design** |
+
+*Responsive design tested across all major device categories*
+
+</div>
+
 - **Desktop (1024px+):** Full layout with side-by-side content sections and large SVG logo
-![Device Testing](assets/css/Sceenshots/device-compatibility4.png)
 - **Tablet (768px - 1023px):** Adjusted spacing with hamburger menu and medium logo
-![Device Testing](assets/css/Sceenshots/device-compatibility3.png)
 - **Mobile (767px and below):** Stacked layout with hamburger navigation and compact logo
-![Device Testing](assets/css/Sceenshots/device-compatibility1.png)
 
 ### Mobile Optimizations
 - **Touch-Friendly:** Enhanced buttons and cards sized appropriately for touch interaction
@@ -250,17 +296,20 @@ hype-coffee-website/
 - **Mobile Address Link:** Tap to open Google Maps app or browser
 - **Vertical Video Support:** Responsive video container for mobile viewing
 
-## Recent Updates & Major Enhancements
-
-### Product Portfolio Optimization (Latest Update)
-- **Streamlined Selection:** Reduced from 6 to 3 core products for better focus
-- **Enhanced Product Pages:** Each product has dedicated page with detailed information
-- **Cross-Page Navigation:** Order buttons redirect to main contact form
-- **Improved Text Visibility:** Enhanced color contrast and text shadows for better readability
+## Major Enhancements
 
 ### Video Integration Enhancement
-- **Pink Matcha Video:** Vertical video window (180×320px) with orange glow effects
+
+<div align="center">
+
 ![Video Window Demo](assets/css/Sceenshots/video-integration.png)
+![Video Window Demo](assets/css/Sceenshots/ValenioVideo.png)
+
+*Vertical video window with floating animation and responsive design for Pink Matcha product*
+
+</div>
+
+- **Pink Matcha Video:** Vertical video window (180×320px) with orange glow effects
 - **Floating Animation:** Smooth floating animation for video container
 - **Responsive Video:** Adapts to different screen sizes (200×360px tablet, 160×290px mobile)
 - **Professional Styling:** Rounded corners, shadows, and gradient borders
@@ -275,12 +324,23 @@ hype-coffee-website/
 - **Improved Mobile Experience:** Better touch targets and responsive design
 - **Cross-Platform Consistency:** Uniform experience across all devices
 
-## 🎬 Animation Features
+## Animation Features
 
 ### Neon Pulse Animation (Featured)
+
+<div align="center">
+
+#### Dynamic Neon Text Effects
+
+| Base State | Peak Pulse |
+|-----------|------------|
+| ![Neon Pulse Effect](assets/css/Sceenshots/neon-pulse-animation.png) | ![Neon Pulse Effect](assets/css/Sceenshots/neon-pulse-animation1.png) |
+
+*Pulsing white glow effect that intensifies and fades every 2 seconds*
+
+</div>
+
 - **Pulsing Glow:** White glow intensifies and fades every 2 seconds
-![Neon Pulse Effect](assets/css/Sceenshots/neon-pulse-animation.png)
-![Neon Pulse Effect](assets/css/Sceenshots/neon-pulse-animation1.png)
 - **Black Text Core:** High contrast black text with white outline
 - **Hover Acceleration:** Faster animation on hover interaction
 - **Mobile Optimization:** Reduced glow intensity for performance
@@ -291,16 +351,26 @@ hype-coffee-website/
 - **Drop Shadow:** Dynamic shadow effects that respond to hover
 
 ### Mobile Menu Animations
+
+<div align="center">
+
+#### Hamburger Menu Transformation
+
+| Closed State | Open State |
+|-------------|------------|
+| ![Hamburger Menu Animation](assets/css/Sceenshots/mobile-menu-demo1.png) | ![Hamburger Menu Animation](assets/css/Sceenshots/MobileX.png) |
+
+*Smooth transformation from hamburger lines to X when menu opens*
+
+</div>
+
 - **Hamburger Transform:** Lines rotate to form X when menu opens
-![Hamburger Menu Animation](assets/css/Sceenshots/mobile-menu-demo1.png)
-![Hamburger Menu Animation](assets/css/Sceenshots/MobileX.png)
 - **Slide Animation:** Menu drawer slides with cubic-bezier easing
 - **Overlay Fade:** Background overlay fades in/out smoothly
 - **Color Change:** Lines change from orange to white when active
 
 ### Product Card Animations
 - **Lift Effect:** Cards rise 15px on hover with enhanced shadows
-![Product Card Effects](assets/css/Sceenshots/product-cards-hover1.png)
 - **Image Scaling:** Product images scale and rotate slightly on hover
 - **Gradient Overlay:** Subtle color overlay that fades in
 - **Border Highlight:** Orange border that appears on interaction
@@ -350,12 +420,23 @@ hype-coffee-website/
 ### Cloud Deployment Options
 
 #### GitHub Pages (Recommended)
+
+<div align="center">
+
+#### Deployment Configuration
+
+| GitHub Pages Setup | Branch Configuration |
+|-------------------|---------------------|
+| ![GitHub Pages Setup](assets/css/Sceenshots/All%20deployments.png) | ![GitHub Pages Setup](assets/css/Sceenshots/Branch%20main.png) |
+
+*GitHub Pages deployment configuration showing automated hosting setup*
+
+</div>
+
 1. Create new GitHub repository
 2. Upload all project files
-![GitHub Pages Setup](assets/css/Sceenshots/All deployments.png)
 3. Go to Settings → Pages
 4. Select source branch (main/master)
-![GitHub Pages Setup](assets/css/Sceenshots/Branch main.png)
 5. Access at: `https://yourusername.github.io/repository-name`
 
 #### Alternative Hosting Platforms
@@ -376,83 +457,45 @@ hype-coffee-website/
 - [x] Text visibility is good on all backgrounds
 - [x] Website displays correctly on all target devices
 
-## Content Customization Guide
 
-### Product Portfolio
-The website now features three core products:
-
-1. **Pink Matcha (Dragon Fruit)** - 15 CHF
-   - Exotic superfood powder with health benefits
-   - Features vertical video integration
-   - Preparation guide and benefits section
-
-2. **Cold Brew Special** - 6 CHF
-   - 18-hour cold brew process
-   - Detailed brewing timeline
-   - Health benefits and serving details
-
-3. **Valenio Wholesale Coffee** - 35-40 CHF
-   - Professional-grade coffee beans
-   - 20+ years of expertise
-   - Video content and variety showcase
-
-### Updating Product Information
-To modify product details:
-
-1. **Main Page Cards:** Edit `index.html` product grid section
-2. **Individual Pages:** Update respective product HTML files
-3. **Pricing:** Ensure consistency between main page and product pages
-4. **Images:** Update product images in `assets/images/` folder
-
-### Video Integration
-For Pink Matcha video:
-```html
-<div class="small-video-container">
-    <video autoplay muted loop playsinline>
-        <source src="assets/videos/your-video.mp4" type="video/mp4">
-        <source src="assets/videos/your-video.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-</div>
-```
-
-### Text Visibility Customization
-To adjust text visibility:
-```css
-.product-card p {
-    color: #e0e0e0; /* Adjust color as needed */
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); /* Adjust shadow */
-    font-size: 1rem; /* Adjust size */
-}
 ```
 
 ## Testing & Quality Assurance
 
-### ✅ Validator Testing
+### Validator Testing
 
 **Validator:** All pages were tested separately.
 
-- [x] **Main HTML**  
-  - First try gave me an error:  
-    ![ValidatorError](assets/css/Sceenshots/HtmlPROBLEM.png)
-  - Second try successfully fixed:  
-    ![Validator success](assets/css/Sceenshots/mainHTML.png)
+<div align="center">
 
-- [x] **CSS**  
-  - First try gave me an error:  
-    ![ValidatorError](assets/css/Sceenshots/CSSPROBLEM.png)
-  - Second try successfully fixed:  
-    ![Validator success](assets/css/Sceenshots/mainCSS.png)
+#### HTML & CSS Validation Results
 
-- [x] **Pink Matcha HTML**  
-  ![Validator result](assets/css/Sceenshots/MatchaHTML.png)
+| Test Type | Initial Result | Final Result |
+|-----------|---------------|--------------|
+| **Main HTML** | ![ValidatorError](assets/css/Sceenshots/HtmlPROBLEM.png) | ![Validator success](assets/css/Sceenshots/mainHTML.png) |
+| **CSS Validation** | ![ValidatorError](assets/css/Sceenshots/CSSPROBLEM.png) | ![Validator success](assets/css/Sceenshots/mainCSS.png) |
 
-- [x] **Cold Brew HTML**  
-  ![Validator result](assets/css/Sceenshots/ColdB.HTML.png)
+*Before and after validation results showing successful error resolution*
 
-- [x] **Valenio Wholesale Coffee HTML**  
-  ![Validator result](assets/css/Sceenshots/ValenioHTML.png)
+</div>
 
+**Individual Page Validation Results:**
+
+<div align="center">
+
+| Pink Matcha HTML | Cold Brew HTML | Valenio Wholesale HTML |
+|-----------------|----------------|----------------------|
+| ![Validator result](assets/css/Sceenshots/MatchaHTML.png) | ![Validator result](assets/css/Sceenshots/ColdB.HTML.png) | ![Validator result](assets/css/Sceenshots/ValenioHTML.png) |
+
+*All product pages successfully validated with no errors*
+
+</div>
+
+- [x] **Main HTML** - Successfully fixed validation errors
+- [x] **CSS** - Successfully fixed validation errors  
+- [x] **Pink Matcha HTML** - Passed validation
+- [x] **Cold Brew HTML** - Passed validation
+- [x] **Valenio Wholesale Coffee HTML** - Passed validation
 
 ### Enhanced Testing Checklist
 - [x] All three product pages load correctly
@@ -483,13 +526,24 @@ Test all features in:
 - [x] Address link opens maps app properly
 
 ### Performance Testing
+
+<div align="center">
+
+#### Website Performance Analysis
+
+| Desktop Performance | Mobile Performance |
+|-------------------|------------------|
+| ![Performance Metrics](assets/css/Sceenshots/performance-results1.png) | ![Performance Metrics](assets/css/Sceenshots/performance-results2.png) |
+
+*Performance testing results showing optimized loading times and smooth animations*
+
+</div>
+
 - [x] Page loading speed with all assets
 - [x] Video loading and playback
 - [x] Animation performance on mobile
 - [x] CSS transitions smoothness
 - [x] Image optimization and loading
-![Performance Metrics](assets/css/Sceenshots/performance-results1.png)
-![Performance Metrics](assets/css/Sceenshots/performance-results2.png)
 
 ## Future Enhancement Opportunities
 
@@ -515,48 +569,27 @@ Test all features in:
 - **Virtual Coffee Classes:** Online brewing workshops
 - **Corporate Packages:** Business coffee solutions
 
-## 📍 Business Information
+## Business Information
 
-### 🏪 HYPE Specialty Coffee & Good Vibes
+### Location
+**HYPE Specialty Coffee & Good Vibes**
 
-<div align="center">
+- **Address:** Universitätstrasse 41, 8006 Zurich, Switzerland
+- **Phone:** (+41) 76 502 22 53
+- **Email:** hello@hypecoffee.com
+- **Hours:**
+  - Monday - Friday: 7:30 AM - 6:00 PM
+  - Saturday - Sunday: 9:00 AM - 4:00 PM
 
-#### Location & Contact
+### Product Pricing
+- **Pink Matcha (Dragon Fruit):** 15 CHF (50g)
+- **Cold Brew Special:** 6 CHF (16oz)
+- **Valenio Wholesale Coffee:** 35-40 CHF (per kg)
 
-**📍 Address:** Universitätstrasse 41, 8006 Zurich, Switzerland  
-**📞 Phone:** [(+41) 76 502 22 53](tel:+41765022253)  
-**✉️ Email:** [hello@hypecoffee.com](mailto:hello@hypecoffee.com)
-
-#### Business Hours
-
-| Day | Hours |
-|-----|-------|
-| **Monday - Friday** | 7:30 AM - 6:00 PM |
-| **Saturday - Sunday** | 9:00 AM - 4:00 PM |
-
-</div>
-
-### 💰 Current Pricing
-
-<div align="center">
-
-| Product | Size | Price |
-|---------|------|-------|
-| 🌸 **Pink Matcha (Dragon Fruit)** | 50g | **15 CHF** |
-| ❄️ **Cold Brew Special** | 16oz | **6 CHF** |
-| ☕ **Valenio Wholesale Coffee** | 1kg | **35-40 CHF** |
-
-</div>
-
-### 🌐 Social Media
-
-<div align="center">
-
-[![Instagram](assets/css/Sceenshots/Instagram.png)](https://www.instagram.com/hype_specialty_coffee?utm_source=ig_web_button_share_sheet&igsh=MXpobGpncTlub2x4)
-[![Facebook](assets/css/Sceenshots/FaceBook.png)](https://www.facebook.com/profile.php?id=100068255355285)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
-
-</div>
+### Social Media
+- **Instagram:** @hype_specialty_coffee
+- **Facebook:** [Coming Soon]
+- **Twitter:** [Coming Soon]
 
 ## Credits & Attribution
 
@@ -584,7 +617,7 @@ Test all features in:
 - **Performance Optimized:** Efficient animations and video integration
 - **Mobile Optimized:** Touch-friendly interface with enhanced readability
 
-## 📚 References & Learning Resources
+## References & Learning Resources
 
 ### HTML & CSS Fundamentals
 - **MDN Web Docs** - HTML Elements Reference
@@ -704,7 +737,7 @@ Test all features in:
 - **freeCodeCamp** - Web development fundamentals
 - **The Odin Project** - Full-stack development curriculum
 
-## 🤖 AI-Assisted Development
+## AI-Assisted Development
 
 ### ChatGPT 
 - **OpenAI ChatGPT** - Code review, debugging assistance, and documentation help
@@ -713,4 +746,3 @@ Test all features in:
   - Responsive design problem-solving
   
 © 2024 HYPE Specialty Coffee. Website designed and developed with passion for great coffee, good vibes, streamlined product focus, and cutting-edge web technology.
-
