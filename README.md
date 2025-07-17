@@ -470,6 +470,7 @@ hype-coffee-website/
 |-----------|---------------|--------------|
 | **Main HTML** | ![ValidatorError](assets/css/Sceenshots/HtmlPROBLEM.png) | ![Validator success](assets/css/Sceenshots/mainHTML.png) |
 | **CSS Validation** | ![ValidatorError](assets/css/Sceenshots/CSSPROBLEM.png) | ![Validator success](assets/css/Sceenshots/mainCSS.png) |
+| **Links** | **[Validate Your HTML →](https://validator.w3.org/nu/#textarea)** | **[Validate Your CSS →](https://jigsaw.w3.org/css-validator/validator)** |
 
 *Before and after validation results showing successful error resolution*
 
@@ -482,6 +483,7 @@ hype-coffee-website/
 | Pink Matcha HTML | Cold Brew HTML | Valenio Wholesale HTML |
 |-----------------|----------------|----------------------|
 | ![Validator result](assets/css/Sceenshots/MatchaHTML.png) | ![Validator result](assets/css/Sceenshots/ColdB.HTML.png) | ![Validator result](assets/css/Sceenshots/ValenioHTML.png) |
+| **[Validate Pink Matcha →](https://validator.w3.org/nu/#textarea)** | **[Validate Cold Brew →](https://validator.w3.org/nu/#textarea)** | **[Validate Valenio →](https://validator.w3.org/nu/#textarea)** |
 
 *All product pages successfully validated with no errors*
 
@@ -530,6 +532,7 @@ Test all features in:
 | Desktop Performance | Mobile Performance |
 |-------------------|------------------|
 | ![Performance Metrics](assets/css/Sceenshots/performance-results1.png) | ![Performance Metrics](assets/css/Sceenshots/performance-results2.png) |
+| **[Test Desktop Performance →](https://pagespeed.web.dev/analysis/https-stevedok22-github-io-Hype-coffee/0hmd3jrvcx?form_factor=desktop)** | **[Test Mobile Performance →](https://pagespeed.web.dev/analysis/https-stevedok22-github-io-Hype-coffee/0hmd3jrvcx?form_factor=mobile)** |
 
 *Performance testing results showing optimized loading times and smooth animations*
 
@@ -590,12 +593,54 @@ Test all features in:
 **Twitter:** Coming Soon
 
 </div>
+
 ## Credits & Attribution
+
+### Image & Video Sources
+
+**Authentic Content (95% of images):**
+- **Coffee Shop Photography:** Original images provided directly by HYPE Specialty Coffee shop owner
+- **Product Images:** Authentic product photography from real coffee operations
+- **Behind-the-Scenes Content:** Genuine workspace and preparation images
+
+**Partner Collaborations:**
+- **Dragon Fruit Powder (Pink Matcha):** Product images and information sourced from official partner
+  - [Tea Route - Dragon Fruit Powder](https://www.tearoute.gr/dragon-fru-powder/p/973/107,142/)
+- **Valenio Wholesale Coffee:** Professional coffee images and expertise content from certified partner
+  - [Valenio Coffee - Wholesale Division](https://www.valenio.coffee/%CF%87%CE%BF%CE%BD%CE%B4%CF%81%CE%B9%CE%BA%CE%AE/)
+
+**Video Content Sources:**
+
+<div align="center">
+
+#### Pink Matcha Preparation Video
+
+![Pink Matcha Video](assets/css/Sceenshots/videoSou.Matcha.png)
+
+**Original content from Tea Route partner**
+- **Source:** [YouTube Shorts - Matcha Preparation](https://www.youtube.com/shorts/C_4RpDdhvCM)
+- **File:** `MatchaVideo.MP4` (converted for web optimization)
+- **Features:** Vertical video window with floating animation and orange glow effects
+
+</div>
+
+<div align="center">
+
+#### Valenio Coffee Roasting Process
+
+![Valenio Video](assets/css/Sceenshots/videoSou.Valenio.png)
+
+**Professional roasting demonstration**
+- **Source:** [YouTube - Valenio Coffee Roasting](https://www.youtube.com/watch?v=5Mv8Z4lGSA4&ab_channel=Valenio-ValantisLamprianidis)
+- **Official content:** Valenio-Valantis Lamprianidis channel
+- **Content:** Expert coffee roasting techniques and 20+ years of experience
+
+</div>
 
 ### External Resources
 **Google Fonts:**
 - Libre Baskerville (Open Font License)
-- Odibee Sans (Open Font License)
+- Odibee Sans (Open Font License)  
 - Font Loading: Optimized with display=swap parameter
 
 ### Custom Development
@@ -609,12 +654,80 @@ Test all features in:
 - **Cross-Page Navigation:** Seamless order flow implementation
 - **Responsive Design:** Mobile-first approach with scalable elements
 
+### JavaScript Implementation
+
+<div align="center">
+
+#### Contact Form Interactive Features
+
+| Form States | Dynamic Address Field |
+|------------|----------------------|
+| ![Contact Form Features](assets/css/Sceenshots/contact-form1.png) | ![Contact Form Features](assets/css/Sceenshots/contact-form2.png) |
+
+*Dynamic form interactions with delivery address toggle and success messaging*
+
+</div>
+
+**Interactive Functionality:**
+- **Dynamic Address Field:** Shows/hides delivery address based on order type selection
+- **Form Validation:** Real-time form validation and user feedback
+- **Success Messaging:** Animated success confirmation with auto-hide functionality
+- **Form Reset:** Automatic form clearing after successful submission
+- **Source:** [YouTube Shorts - Matcha Preparation](https://www.youtube.com/watch?v=unEdnHC2BAs)
+```javascript
+// Contact form delivery address toggle functionality
+function toggleAddressField() {
+    const orderType = document.getElementById('order-type').value;
+    const addressField = document.getElementById('addressField');
+    
+    if (orderType === 'delivery') {
+        addressField.classList.add('show');
+        document.getElementById('delivery-address').required = true;
+    } else {
+        addressField.classList.remove('show');
+        document.getElementById('delivery-address').required = false;
+    }
+}
+
+// Form submission handling with user feedback
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const successMessage = document.getElementById('successMessage');
+    const form = document.getElementById('contactForm');
+    
+    successMessage.classList.add('show');
+    setTimeout(() => {
+        form.reset();
+        toggleAddressField();
+    }, 1000);
+    
+    setTimeout(() => {
+        successMessage.classList.remove('show');
+    }, 5000);
+});
+```
+
+**Technical Approach:**
+- **CSS-First Design:** Minimal JavaScript usage prioritizing CSS solutions
+- **Progressive Enhancement:** Core functionality works without JavaScript
+- **Event-Driven Interactions:** Modern DOM event handling
+- **Accessibility-Focused:** Form interactions maintain keyboard navigation support
+
 ### Code Quality Standards
 - **Clean Code:** Enhanced readability and maintainability across all pages
 - **Advanced Documentation:** Comprehensive commenting for all features
 - **Modern CSS:** Latest features including improved text visibility techniques
 - **Performance Optimized:** Efficient animations and video integration
 - **Mobile Optimized:** Touch-friendly interface with enhanced readability
+- **Minimal JavaScript:** Only essential interactivity with graceful degradation
+
+### Content Authenticity
+**95% Real Business Content:**
+- All coffee shop images are authentic and represent actual HYPE operations
+- Product images showcase real items available for purchase
+- Partner content verified and sourced from official business channels
+- Video content demonstrates actual preparation and roasting processes
+- Business information and pricing reflect current offerings
 
 ## References & Learning Resources
 
