@@ -25,7 +25,7 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 
 [See deployed website](https://stevedok22.github.io/Hype-coffee/)
 
-![Product Pages Grid](assets/css/Sceenshots/ScreenshotDevices.png)                  
+![Product Pages Grid](assets/css/Sceenshots/ScreenshotDevices2.png)                  
 
 **Target Audience:** 
 - Coffee enthusiasts seeking specialty brews
@@ -44,15 +44,45 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 ## Website Features
 
 ### Core Functionality
+
+<div align="center">
+
+#### Animated Logo and Branding
+
+| Logo Animation | Neon Logo Efect & Animation |
+|------------------|----------------|
+| ![Neon Logo Animation](assets/css/Sceenshots/neon-logo2.png) | ![Neon Logo Animation](assets/css/Sceenshots/logoanimation.png) |
+
+*Custom SVG coffee cup logo with animated steam effects and pulsing "HYPE" neon text*
+
+</div>
+
 - **Animated SVG Logo:** Custom coffee cup logo with animated steam effects in the header and pulsing "HYPE" neon text
-![Neon Logo Animation](assets/css/Sceenshots/neon-logo2.png)
-![Neon Logo Animation](assets/css/Sceenshots/neon-logo-animation.png)
 - **Enhanced Header:** Glassmorphic design with backdrop blur and smooth hover transitions
 - **Mobile Hamburger Menu:** Push menu (side drawer) with orange gradient animations for perfect mobile navigation
-![Mobile Navigation](assets/css/Sceenshots/mobile-menu-demo1.png)
-![Mobile Navigation](assets/css/Sceenshots/mobile-menu-demo2.png)
+
+<div align="center">
+
+#### Mobile Navigation System
+
+| Menu Closed | Menu Open |
+|------------|-----------|
+| ![Mobile Navigation](assets/css/Sceenshots/mobile-menu-demo1.png) | ![Mobile Navigation](assets/css/Sceenshots/mobile-menu-demo2.png) |
+
+*Smooth slide-out mobile navigation with hamburger menu animation*
+
+</div>
+
 - **Premium Product Cards:** Gradient backgrounds with sophisticated hover animations and improved text visibility
+
+<div align="center">
+
 ![Product Cards Hover Effects](assets/css/Sceenshots/product-cards-hover1.png)
+
+*Interactive product cards with lift effects and enhanced visual feedback*
+
+</div>
+
 - **Neon Pulse Animation:** Dynamic "HYPE" text with pulsing white neon glow effect
 - **Interactive About Image:** Custom coffee image with glowing effects and proper sizing
 - **Clickable Address:** Google Maps integration for easy location finding
@@ -66,17 +96,39 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - **About Section:** Company story with custom coffee image featuring glow effects
 - **Products Section:** Streamlined showcase of three core products with enhanced visibility
 - **Contact/Order Section:** Combined contact form and ordering system for customer inquiries
-![Contact Form Features](assets/css/Sceenshots/contact-form1.png)
-![Contact Form Features](assets/css/Sceenshots/contact-form2.png)
+
+<div align="center">
+
+#### Contact Form Features
+
+| Form Layout | Dynamic Features |
+|------------|------------------|
+| ![Contact Form Features](assets/css/Sceenshots/contact-form1.png) | ![Contact Form Features](assets/css/Sceenshots/contact-form2.png) |
+
+*Professional contact form with dynamic address field and order type selection*
+
+</div>
+
 - **Footer:** Business information with clickable Google Maps address and social media links
 
 ### Product Pages
+
+<div align="center">
+
+#### Three Core Product Offerings
+
+| Pink Matcha | Cold Brew | Valenio Coffee |
+|------------|-----------|----------------|
+| ![Pink Matcha Page](assets/css/Sceenshots/pink-matcha-page.png) | ![Cold Brew Page](assets/css/Sceenshots/cold-brew-page.png) | ![Valenio Coffee Page](assets/css/Sceenshots/valenio-page.png) |
+| **Dragon Fruit Superfood** | **18-Hour Cold Brew Process** | **Professional Wholesale Coffee** |
+
+*Dedicated product pages with detailed information, videos, and ordering integration*
+
+</div>
+
 - **Pink Matcha (Dragon Fruit):** Exotic superfood powder with video integration and vertical video window
-![Pink Matcha Page](assets/css/Sceenshots/pink-matcha-page.png)
 - **Cold Brew Special:** 18-hour cold brew process with detailed timeline and benefits
-![Cold Brew Page](assets/css/Sceenshots/cold-brew-page.png)
 - **Valenio Wholesale Coffee:** Professional coffee beans with expertise showcase and video content
-![Valenio Coffee Page](assets/css/Sceenshots/valenio-page.png)
 
 ### Interactive Elements
 - **Animated Logo:** SVG coffee cup with floating steam animation in header
@@ -463,27 +515,48 @@ Test all features in:
 - **Virtual Coffee Classes:** Online brewing workshops
 - **Corporate Packages:** Business coffee solutions
 
-## Business Information
+## 📍 Business Information
 
-### Location
-**HYPE Specialty Coffee & Good Vibes**
+### 🏪 HYPE Specialty Coffee & Good Vibes
 
-- **Address:** Universitätstrasse 41, 8006 Zurich, Switzerland
-- **Phone:** (+41) 76 502 22 53
-- **Email:** hello@hypecoffee.com
-- **Hours:**
-  - Monday - Friday: 7:30 AM - 6:00 PM
-  - Saturday - Sunday: 9:00 AM - 4:00 PM
+<div align="center">
 
-### Product Pricing
-- **Pink Matcha (Dragon Fruit):** 15 CHF (50g)
-- **Cold Brew Special:** 6 CHF (16oz)
-- **Valenio Wholesale Coffee:** 35-40 CHF (per kg)
+#### Location & Contact
 
-### Social Media
-- **Instagram:** @hype_specialty_coffee
-- **Facebook:** [Coming Soon]
-- **Twitter:** [Coming Soon]
+**📍 Address:** Universitätstrasse 41, 8006 Zurich, Switzerland  
+**📞 Phone:** [(+41) 76 502 22 53](tel:+41765022253)  
+**✉️ Email:** [hello@hypecoffee.com](mailto:hello@hypecoffee.com)
+
+#### Business Hours
+
+| Day | Hours |
+|-----|-------|
+| **Monday - Friday** | 7:30 AM - 6:00 PM |
+| **Saturday - Sunday** | 9:00 AM - 4:00 PM |
+
+</div>
+
+### 💰 Current Pricing
+
+<div align="center">
+
+| Product | Size | Price |
+|---------|------|-------|
+| 🌸 **Pink Matcha (Dragon Fruit)** | 50g | **15 CHF** |
+| ❄️ **Cold Brew Special** | 16oz | **6 CHF** |
+| ☕ **Valenio Wholesale Coffee** | 1kg | **35-40 CHF** |
+
+</div>
+
+### 🌐 Social Media
+
+<div align="center">
+
+[![Instagram](assets/css/Sceenshots/Instagram.png)](https://www.instagram.com/hype_specialty_coffee?utm_source=ig_web_button_share_sheet&igsh=MXpobGpncTlub2x4)
+[![Facebook](assets/css/Sceenshots/FaceBook.png)](https://www.facebook.com/profile.php?id=100068255355285)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
+
+</div>
 
 ## Credits & Attribution
 
