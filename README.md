@@ -9,7 +9,6 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - [Design & Branding](#design--branding)
 - [Technical Implementation](#technical-implementation)
 - [Responsive Design & Mobile Features](#responsive-design--mobile-features)
-- [Recent Updates & Major Enhancements](#recent-updates--major-enhancements)
 - [Animation Features](#animation-features)
 - [Deployment Instructions](#deployment-instructions)
 - [Content Customization Guide](#content-customization-guide)
@@ -457,9 +456,6 @@ hype-coffee-website/
 - [x] Text visibility is good on all backgrounds
 - [x] Website displays correctly on all target devices
 
-
-```
-
 ## Testing & Quality Assurance
 
 ### Validator Testing
@@ -581,16 +577,19 @@ Test all features in:
   - Monday - Friday: 7:30 AM - 6:00 PM
   - Saturday - Sunday: 9:00 AM - 4:00 PM
 
-### Product Pricing
-- **Pink Matcha (Dragon Fruit):** 15 CHF (50g)
-- **Cold Brew Special:** 6 CHF (16oz)
-- **Valenio Wholesale Coffee:** 35-40 CHF (per kg)
-
 ### Social Media
-- **Instagram:** @hype_specialty_coffee
-- **Facebook:** [Coming Soon]
-- **Twitter:** [Coming Soon]
 
+<div align="center">
+
+**Instagram:**  
+[![Instagram](assets/css/Sceenshots/Instagram.png)](https://www.instagram.com/hype_specialty_coffee?utm_source=ig_web_button_share_sheet&igsh=MXpobGpncTlub2x4)
+
+**Facebook:**  
+[![Facebook](assets/css/Sceenshots/FaceBook.png)](https://www.facebook.com/profile.php?id=100068255355285)
+
+**Twitter:** Coming Soon
+
+</div>
 ## Credits & Attribution
 
 ### External Resources
