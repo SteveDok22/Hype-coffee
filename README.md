@@ -11,7 +11,6 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 - [Responsive Design & Mobile Features](#responsive-design--mobile-features)
 - [Animation Features](#animation-features)
 - [Deployment Instructions](#deployment-instructions)
-- [Content Customization Guide](#content-customization-guide)
 - [Testing & Quality Assurance](#testing--quality-assurance)
 - [Future Enhancement Opportunities](#future-enhancement-opportunities)
 - [Business Information](#business-information)
