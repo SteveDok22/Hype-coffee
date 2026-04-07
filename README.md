@@ -25,7 +25,8 @@ A modern, responsive website for HYPE specialty coffee shop, designed to showcas
 
 <div align="center">
 
-![Product Pages Grid](assets/css/Sceenshots/ScreenshotDevices2.png)
+![Product Pages Grid](assets/css/images/MOCUPHYPE-gif.gif
+)
 
 *HYPE Coffee website displayed across multiple devices - showcasing responsive design*
 
