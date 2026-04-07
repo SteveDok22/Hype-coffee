@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink Matcha (Dragon Fruit) - HYPE Specialty Coffee</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body class="pink-matcha">
-    <!-- Header -->
     <header class="site-header">
         <div class="header-content">
             <div class="logo-container">
@@ -22,61 +18,35 @@
                             <stop offset="100%" style="stop-color:#ff6b00;stop-opacity:1" />
                         </linearGradient>
                     </defs>
-                    <path d="M20 35 Q20 30 25 30 L60 30 Q65 30 65 35 L65 75 Q65 85 55 85 L30 85 Q20 85 20 75 Z"
-                        fill="url(#cupGradient)" stroke="#2a2a2a" stroke-width="2" />
-                    <path d="M65 45 Q75 45 75 55 Q75 65 65 65" fill="none" stroke="#2a2a2a" stroke-width="3"
-                        stroke-linecap="round" />
+                    <path d="M20 35 Q20 30 25 30 L60 30 Q65 30 65 35 L65 75 Q65 85 55 85 L30 85 Q20 85 20 75 Z" fill="url(#cupGradient)" stroke="#2a2a2a" stroke-width="2" />
+                    <path d="M65 45 Q75 45 75 55 Q75 65 65 65" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round" />
                     <ellipse cx="42.5" cy="35" rx="20" ry="3" fill="#4a2c2a" />
                 </svg>
                 <div class="logo">HYPE</div>
             </div>
-            <a href="index.html" class="back-button">← Back to Menu</a>
+            <a href="index.html" class="back-button" onclick="sendHome(event)">← Back to Menu</a>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main>
-
-        <!-- Product Hero Section -->
         <section class="product-hero">
             <div class="product-image-section">
-                <img src="assets/css/images/PinkMorigin1.jpg" alt="Pink Matcha Dragon Fruit Powder"
-                    class="product-image-large" onerror="this.style.display='none'">
-
-                <!-- Small Video Window -->
+                <img src="assets/css/images/PinkMorigin1.jpg" alt="Pink Matcha Dragon Fruit Powder" class="product-image-large" onerror="this.style.display='none'">
                 <div class="small-video-container">
                     <video autoplay muted loop playsinline>
                         <source src="assets/css/videos/MatchaVideo.MP4" type="video/mp4">
-                        <source src="your-video.webm" type="video/webm">
                     </video>
                 </div>
             </div>
-
             <div class="product-info">
                 <h1 class="product-title">Pink Matcha</h1>
                 <div class="product-price">15 CHF - 50gr.</div>
-                <p class="product-description">
-                    Experience the magic of Dragon Fruit transformed into "Pink Matcha" through advanced
-                    freeze-drying
-                    technology. This exotic superfood powder retains all the beneficial nutrients while delivering
-                    an
-                    intense pink-purple color that's as stunning as it is delicious.
-                </p>
-                <p class="product-description">
-                    Rich in vitamins, minerals, fibers, and antioxidants, our Pink Matcha offers a taste between
-                    kiwi
-                    and pear. Perfect for creating Instagram-worthy drinks, smoothies, desserts, and cocktails with
-                    its
-                    vibrant natural coloring.
+                <p class="product-description">Experience the magic of Dragon Fruit transformed into "Pink Matcha" through advanced freeze-drying technology. This exotic superfood powder retains all the beneficial nutrients while delivering an intense pink-purple color that's as stunning as it is delicious.</p>
+                <p class="product-description">Rich in vitamins, minerals, fibers, and antioxidants, our Pink Matcha offers a taste between kiwi and pear. Perfect for creating Instagram-worthy drinks, smoothies, desserts, and cocktails with its vibrant natural coloring.</p>
             </div>
         </section>
-
-        <!-- Dragon Fruit Benefits Section -->
         <section class="benefits-section">
             <h2 class="benefits-title">Superfood Benefits</h2>
-            <p style="text-align: center; margin-bottom: 2rem; opacity: 0.9;">
-                Dragon fruit powder preserves all the nutritional benefits through freeze-drying technology.
-            </p>
+            <p style="text-align: center; margin-bottom: 2rem; opacity: 0.9;">Dragon fruit powder preserves all the nutritional benefits through freeze-drying technology.</p>
             <div class="benefits-grid">
                 <div class="benefit-item">
                     <div class="benefit-icon">💪</div>
@@ -100,8 +70,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Preparation Guide -->
         <section class="preparation-section">
             <h2 class="preparation-title">How to Prepare Pink Matcha</h2>
             <div class="prep-steps">
@@ -127,22 +95,24 @@
                 </div>
             </div>
         </section>
-
-        <!-- Order Section -->
         <section class="order-section">
             <h2 class="order-title">Experience Pink Matcha Magic</h2>
-            <p>Transform your drinks and desserts with the vibrant power of dragon fruit. Perfect for health-conscious
-                individuals who love beautiful, nutritious treats.</p>
-            <a href="index.html#contact" class="order-button">Order Your Pink Matcha</a>
+            <p>Transform your drinks and desserts with the vibrant power of dragon fruit.</p>
+            <a href="index.html#contact" class="order-button" onclick="sendContact(event)">Order Your Pink Matcha</a>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 HYPE Specialty Coffee. Exotic superfoods, vibrant experiences.</p>
         </div>
     </footer>
+    <script>
+        function sendHome(e) {
+            if (window.parent !== window) { e.preventDefault(); window.parent.postMessage('goHome', '*'); }
+        }
+        function sendContact(e) {
+            if (window.parent !== window) { e.preventDefault(); window.parent.postMessage('goToContact', '*'); }
+        }
+    </script>
 </body>
-
 </html>

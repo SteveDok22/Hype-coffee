@@ -320,7 +320,6 @@ main {
     font-size: clamp(4rem, 12vw, 12rem);
     margin-bottom: 1rem;
     display: inline-block;
-    /* Remove color here - let .neon-pulse handle it */
 }
 
 /* Neon Pulse Effect */
@@ -519,6 +518,7 @@ section {
     overflow: hidden;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .product-card::before {
@@ -1941,5 +1941,77 @@ body.valenio footer {
     footer {
         margin: 20px -5px 0 -5px;
         padding: 2rem 1rem 1rem 1rem;
+    }
+}
+
+
+/* ==============================================
+   PRODUCT MODAL (iframe)
+   ============================================== */
+
+.product-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    transform: translateX(100%);
+    transition: transform 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    visibility: hidden;
+}
+
+.product-modal-overlay.open {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* The iframe fills the entire overlay */
+.product-modal-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    background: #000;
+}
+
+/* Back button — fixed in top-left corner */
+.product-modal-back {
+    position: fixed;
+    top: 18px;
+    left: 20px;
+    z-index: 2100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 135, 0, 0.92);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255, 135, 0, 0.4);
+}
+
+.product-modal-back:hover {
+    background: #ff6b00;
+    transform: translateX(-5px);
+    box-shadow: 0 6px 25px rgba(255, 135, 0, 0.55);
+}
+
+/* Hide the back button when modal is closed */
+.product-modal-overlay:not(.open) .product-modal-back {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .product-modal-back {
+        top: 12px;
+        left: 12px;
+        padding: 0.6rem 1.1rem;
+        font-size: 0.85rem;
     }
 }

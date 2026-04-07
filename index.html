@@ -91,7 +91,6 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <!-- Replace SVG with your image -->
         <section id="home" class="hero">
             <img src="assets/css/images/golo.png" class="hero-main-logo" alt="HYPE Coffee Logo">
             <div class="hero-content">
@@ -132,7 +131,8 @@
             <h2 class="section-title">Our Products</h2>
             <div class="products-grid">
 
-                <a href="pink-matcha.html" class="product-card" target="_blank">
+                <!-- CHANGED: removed target="_blank", added onclick -->
+                <a href="pink-matcha.html" class="product-card" onclick="openProductModal(event, 'pink-matcha.html')">
                     <img src="assets/css/images/PinkMorigin2.jpg" alt="Pink Matcha Dragon Fruit Powder"
                         class="product-image" onerror="this.style.display='none'">
                     <h3>Pink Matcha (Dragon Fruit)</h3>
@@ -141,7 +141,8 @@
                     <div class="price">15 CHF</div>
                 </a>
 
-                <a href="cold-brew-special.html" class="product-card" target="_blank">
+                <!-- CHANGED: removed target="_blank", added onclick -->
+                <a href="cold-brew-special.html" class="product-card" onclick="openProductModal(event, 'cold-brew-special.html')">
                     <img src="assets/css/images/cold2.jpg" alt="Cold Brew Special" class="product-image"
                         onerror="this.style.display='none'">
                     <h3>Cold Brew Special</h3>
@@ -150,7 +151,8 @@
                     <div class="price">6 CHF</div>
                 </a>
 
-                <a href="valenio-wholesale.html" class="product-card" target="_blank">
+                <!-- CHANGED: removed target="_blank", added onclick -->
+                <a href="valenio-wholesale.html" class="product-card" onclick="openProductModal(event, 'valenio-wholesale.html')">
                     <img src="assets/css/images/Valentio1.jpg" alt="Valenio Wholesale Coffee" class="product-image"
                         onerror="this.style.display='none'">
                     <h3>Valenio Wholesale Coffee</h3>
@@ -159,17 +161,15 @@
                     <div class="price">35-40 CHF</div>
                 </a>
             </div>
-
-
         </section>
+
         <!-- Contact Section -->
         <section id="contact" class="autoShow">
             <div class="contact-section">
                 <div class="contact-content">
                     <h2 class="section-title">Contact & Orders</h2>
                     <p style="text-align: center; margin-bottom: 2rem;">Ready to experience HYPE? Get in touch with
-                        us
-                        or place your order!</p>
+                        us or place your order!</p>
 
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
@@ -213,7 +213,6 @@
 
                         <button type="submit" class="submit-btn">Send Order / Message</button>
 
-                        <!--  Enhanced Success Message -->
                         <div class="form-success" id="successMessage">
                             Thank you for your message! We'll get back to you soon.
                         </div>
@@ -259,14 +258,22 @@
             <p>&copy; 2024 HYPE Specialty Coffee. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        // Pure CSS solution using :target pseudo-class for form handling
-        // This script provides the interactive functionality while keeping the CSS-first approach
 
+    <!-- ============================================
+         PRODUCT MODAL (iframe-based)
+         ============================================ -->
+    <div id="productModal" class="product-modal-overlay" aria-hidden="true">
+        <button class="product-modal-back" onclick="closeProductModal()">
+            ← Back to Menu
+        </button>
+        <iframe id="productModalFrame" class="product-modal-frame" src="" title="Product detail"></iframe>
+    </div>
+
+    <script>
+        // ─── ADDRESS FIELD ────────────────────────────────────────────────────
         function toggleAddressField() {
             const orderType = document.getElementById('order-type').value;
             const addressField = document.getElementById('addressField');
-
             if (orderType === 'delivery') {
                 addressField.classList.add('show');
                 document.getElementById('delivery-address').required = true;
@@ -276,32 +283,57 @@
             }
         }
 
-        // Form submission handler
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent default form submission
-
-            // Get form elements
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
             const successMessage = document.getElementById('successMessage');
-            const form = document.getElementById('contactForm');
-
-            // Show success message
             successMessage.classList.add('show');
-
-            // Reset form after a short delay
-            setTimeout(() => {
-                form.reset();
-                toggleAddressField(); // Reset address field visibility
-            }, 1000);
-
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                successMessage.classList.remove('show');
-            }, 5000);
+            setTimeout(() => { this.reset(); toggleAddressField(); }, 1000);
+            setTimeout(() => successMessage.classList.remove('show'), 5000);
         });
 
-        // Initialize address field state on page load
-        document.addEventListener('DOMContentLoaded', function () {
-            toggleAddressField();
+        document.addEventListener('DOMContentLoaded', toggleAddressField);
+
+        // ─── PRODUCT MODAL (iframe) ───────────────────────────────────────────
+        const modal = document.getElementById('productModal');
+        const frame = document.getElementById('productModalFrame');
+
+        function openProductModal(e, url) {
+            e.preventDefault();
+
+            // Set iframe source and open modal
+            frame.src = url;
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            modal.scrollTo({ top: 0 });
+        }
+
+        function closeProductModal() {
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            // Clear iframe src after slide-out animation
+            setTimeout(() => { frame.src = ''; }, 420);
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('open')) {
+                closeProductModal();
+            }
+        });
+
+        // Listen for "go to contact" message from inside the iframe
+        window.addEventListener('message', function(e) {
+            if (e.data === 'goToContact') {
+                closeProductModal();
+                setTimeout(() => {
+                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                }, 450);
+            }
+            if (e.data === 'goHome') {
+                closeProductModal();
+            }
         });
     </script>
 </body>

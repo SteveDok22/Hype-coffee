@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cold Brew Special - HYPE Specialty Coffee</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body class="cold-brew">
-
-    <!-- Header -->
     <header class="site-header">
         <div class="header-content">
             <div class="logo-container">
@@ -23,49 +18,30 @@
                             <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
                         </linearGradient>
                     </defs>
-                    <path d="M20 35 Q20 30 25 30 L60 30 Q65 30 65 35 L65 75 Q65 85 55 85 L30 85 Q20 85 20 75 Z"
-                        fill="url(#cupGradient)" stroke="#2a2a2a" stroke-width="2" />
-                    <path d="M65 45 Q75 45 75 55 Q75 65 65 65" fill="none" stroke="#2a2a2a" stroke-width="3"
-                        stroke-linecap="round" />
+                    <path d="M20 35 Q20 30 25 30 L60 30 Q65 30 65 35 L65 75 Q65 85 55 85 L30 85 Q20 85 20 75 Z" fill="url(#cupGradient)" stroke="#2a2a2a" stroke-width="2" />
+                    <path d="M65 45 Q75 45 75 55 Q75 65 65 65" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round" />
                     <ellipse cx="42.5" cy="35" rx="20" ry="3" fill="#4a2c2a" />
                 </svg>
                 <div class="logo">HYPE</div>
             </div>
-            <a href="index.html" class="back-button">← Back to Menu</a>
+            <a href="index.html" class="back-button" onclick="sendHome(event)">← Back to Menu</a>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main>
-        <!-- Product Hero Section -->
         <section class="product-hero">
             <div class="product-image-section">
-                <img src="assets/css/images/cold5.jpg" alt="Cold Brew Special"
-                    class="product-image-large" onerror="this.style.display='none'">
+                <img src="assets/css/images/cold5.jpg" alt="Cold Brew Special" class="product-image-large" onerror="this.style.display='none'">
             </div>
             <div class="product-info">
                 <h1 class="product-title">Cold Brew Special</h1>
                 <div class="product-price">6 CHF</div>
-                <p class="product-description">
-                    Discover the smooth, refreshing taste of our Cold Brew Special - a meticulously crafted beverage
-                    that redefines what cold coffee can be. Our unique 18-hour steeping process extracts maximum flavor
-                    while maintaining minimal acidity, resulting in a naturally sweet and incredibly smooth coffee
-                    experience.
-                </p>
-                <p class="product-description">
-                    Made with coarsely ground premium beans and filtered water, our cold brew concentrate is the perfect
-                    balance of strength and smoothness. Served over ice and ready to energize your day with its clean,
-                    refreshing taste and natural caffeine boost.
-                </p>
+                <p class="product-description">Discover the smooth, refreshing taste of our Cold Brew Special - a meticulously crafted beverage that redefines what cold coffee can be. Our unique 18-hour steeping process extracts maximum flavor while maintaining minimal acidity, resulting in a naturally sweet and incredibly smooth coffee experience.</p>
+                <p class="product-description">Made with coarsely ground premium beans and filtered water, our cold brew concentrate is the perfect balance of strength and smoothness. Served over ice and ready to energize your day with its clean, refreshing taste and natural caffeine boost.</p>
             </div>
         </section>
-
-        <!-- Cold Brew Process Section -->
         <section class="process-section">
             <h2 class="process-title">Our 18-Hour Cold Brew Process</h2>
-            <p style="text-align: center; margin-bottom: 2rem; opacity: 0.9;">
-                Patience and precision create the perfect cold brew. Here's how we do it.
-            </p>
+            <p style="text-align: center; margin-bottom: 2rem; opacity: 0.9;">Patience and precision create the perfect cold brew. Here's how we do it.</p>
             <div class="process-timeline">
                 <div class="process-step">
                     <div class="step-icon">⚖️</div>
@@ -93,8 +69,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Product Details -->
         <section class="product-details">
             <div class="detail-card">
                 <h3>🌊 Perfect Brewing</h3>
@@ -106,50 +80,45 @@
                     <li>• Served over premium ice</li>
                 </ul>
             </div>
-
             <div class="detail-card">
                 <h3>❄️ Serving Details</h3>
                 <p><strong>Serving Size:</strong> 16 oz (475ml)<br>
-                    <strong>Temperature:</strong> Chilled (2-4°C)<br>
-                    <strong>Preparation:</strong> Ready to serve<br>
-                    <strong>Ice:</strong> Premium filtered ice cubes<br>
-                    <strong>Caffeine:</strong> ~200mg per serving
-                </p>
+                   <strong>Temperature:</strong> Chilled (2-4°C)<br>
+                   <strong>Preparation:</strong> Ready to serve<br>
+                   <strong>Ice:</strong> Premium filtered ice cubes<br>
+                   <strong>Caffeine:</strong> ~200mg per serving</p>
             </div>
-
             <div class="detail-card">
                 <h3>🍃 Flavor Experience</h3>
                 <p><strong>Body:</strong> Smooth and full-bodied<br>
-                    <strong>Acidity:</strong> Very low, naturally sweet<br>
-                    <strong>Notes:</strong> Chocolate, caramel, nuts<br>
-                    <strong>Finish:</strong> Clean and refreshing<br>
-                    <strong>Sweetness:</strong> Natural, no added sugars
-                </p>
+                   <strong>Acidity:</strong> Very low, naturally sweet<br>
+                   <strong>Notes:</strong> Chocolate, caramel, nuts<br>
+                   <strong>Finish:</strong> Clean and refreshing<br>
+                   <strong>Sweetness:</strong> Natural, no added sugars</p>
             </div>
-
             <div class="detail-card">
                 <h3>🌿 Health Benefits</h3>
-                <p>Cold brew coffee contains higher antioxidant levels than hot coffee and is easier on the stomach due
-                    to lower acidity. Our process preserves beneficial compounds while creating a naturally smooth taste
-                    that doesn't require added sugars or cream.</p>
+                <p>Cold brew coffee contains higher antioxidant levels than hot coffee and is easier on the stomach due to lower acidity. Our process preserves beneficial compounds while creating a naturally smooth taste that doesn't require added sugars or cream.</p>
             </div>
         </section>
-
-        <!-- Order Section -->
         <section class="order-section">
             <h2 class="order-title">Ready for Refreshment?</h2>
-            <p>Cool down with our signature Cold Brew Special. Perfect for hot days or anytime you need a smooth
-                caffeine boost.</p>
-            <a href="index.html#contact" class="order-button">Order Your Cold Brew</a>
+            <p>Cool down with our signature Cold Brew Special. Perfect for hot days or anytime you need a smooth caffeine boost.</p>
+            <a href="index.html#contact" class="order-button" onclick="sendContact(event)">Order Your Cold Brew</a>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 HYPE Specialty Coffee. Crafted with time and precision.</p>
         </div>
     </footer>
+    <script>
+        function sendHome(e) {
+            if (window.parent !== window) { e.preventDefault(); window.parent.postMessage('goHome', '*'); }
+        }
+        function sendContact(e) {
+            if (window.parent !== window) { e.preventDefault(); window.parent.postMessage('goToContact', '*'); }
+        }
+    </script>
 </body>
-
 </html>

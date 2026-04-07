@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valenio Wholesale Coffee - HYPE Specialty Coffee</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Odibee+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body class="valenio">
-
-    <!-- Header -->
     <header class="site-header">
         <div class="header-content">
             <div class="logo-container">
@@ -23,56 +18,35 @@
                             <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
                         </linearGradient>
                     </defs>
-                    <path d="M20 35 Q20 30 25 30 L60 30 Q65 30 65 35 L65 75 Q65 85 55 85 L30 85 Q20 85 20 75 Z"
-                        fill="url(#cupGradient)" stroke="#2a2a2a" stroke-width="2" />
+                    <path d="M20 35 Q20 30 25 30 L60 30 Q65 30 65 35 L65 75 Q65 85 55 85 L30 85 Q20 85 20 75 Z" fill="url(#cupGradient)" stroke="#2a2a2a" stroke-width="2" />
                 </svg>
                 <div class="logo">HYPE</div>
             </div>
-            <a href="index.html" class="back-button">← Back to Menu</a>
+            <a href="index.html" class="back-button" onclick="sendHome(event)">← Back to Menu</a>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main>
-
-        <!-- Product Hero Section -->
         <section class="product-hero">
             <div>
-              <img src="assets/css/images/val3.jpg" alt="Valenio Wholesale Coffee"
-                    class="product-image-large" onerror="this.style.display='none'">
+                <img src="assets/css/images/val3.jpg" alt="Valenio Wholesale Coffee" class="product-image-large" onerror="this.style.display='none'">
             </div>
             <div>
                 <h1 class="product-title">Valenio Wholesale Coffee</h1>
                 <div class="product-price">35.00 CHF - 40.00 CHF</div>
-                <p class="product-description">Experience premium specialty coffee from Valenio Roastery in
-                    Thessaloniki. With over 20 years of expertise in coffee evolution and teaching at academies across
-                    Greece and Europe, we offer wholesale solutions for businesses seeking exceptional quality.</p>
-                <p class="product-description">Our carefully selected specialty-grade varieties are roasted by
-                    SCA-certified professionals and led by Valantis Lamprianidis, a WCE Certified Judge and Authorized
-                    SCA Trainer. Perfect for cafes, restaurants, and businesses demanding excellence.</p>
+                <p class="product-description">Experience premium specialty coffee from Valenio Roastery in Thessaloniki. With over 20 years of expertise in coffee evolution and teaching at academies across Greece and Europe, we offer wholesale solutions for businesses seeking exceptional quality.</p>
+                <p class="product-description">Our carefully selected specialty-grade varieties are roasted by SCA-certified professionals and led by Valantis Lamprianidis, a WCE Certified Judge and Authorized SCA Trainer. Perfect for cafes, restaurants, and businesses demanding excellence.</p>
             </div>
         </section>
-
-        <!-- Video Section -->
         <section class="video-section">
             <h2 class="video-title">Valenio Coffee Roasting Expertise</h2>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/5Mv8Z4lGSA4" title="Valenio Coffee Roasting Process"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+                <iframe src="https://www.youtube.com/embed/5Mv8Z4lGSA4" title="Valenio Coffee Roasting Process" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p style="margin-top: 1rem; font-style: italic; opacity: 0.8;">
-                Watch Valantis Lamprianidis demonstrate the art of professional coffee roasting and brewing techniques.
-            </p>
+            <p style="margin-top: 1rem; font-style: italic; opacity: 0.8;">Watch Valantis Lamprianidis demonstrate the art of professional coffee roasting and brewing techniques.</p>
         </section>
-
-        <!-- Valenio Expertise Section -->
         <section class="expertise-section">
             <h2 class="expertise-title">20+ Years of Coffee Excellence</h2>
-            <p style="text-align: center; margin-bottom: 2rem;">
-                Professional expertise from farm to cup with international recognition and certification.
-            </p>
+            <p style="text-align: center; margin-bottom: 2rem;">Professional expertise from farm to cup with international recognition and certification.</p>
             <div class="expertise-features">
                 <div class="expertise-item">
                     <div class="expertise-icon">🏆</div>
@@ -96,58 +70,54 @@
                 </div>
             </div>
         </section>
-
-        <!-- Coffee Varieties Grid -->
         <section class="varieties-grid">
             <div class="variety-card">
                 <div class="variety-icon">☕</div>
                 <h3>Espresso Blends</h3>
                 <div class="variety-origin">Specialty Grade</div>
-                <p>Carefully crafted espresso blends designed for professional coffee machines. Rich, balanced profiles
-                    perfect for milk-based drinks and straight espresso shots.</p>
+                <p>Carefully crafted espresso blends designed for professional coffee machines.</p>
                 <div class="variety-price">35-40 CHF</div>
             </div>
             <div class="variety-card">
                 <div class="variety-icon">💧</div>
                 <h3>Filter Coffee</h3>
                 <div class="variety-origin">Single Origins</div>
-                <p>High-quality specialty grade varieties selected for filter brewing methods. Special taste and aroma
-                    characteristics that will elevate any coffee service.</p>
-                <div class="variety-price"> 35 CHF</div>
+                <p>High-quality specialty grade varieties selected for filter brewing methods.</p>
+                <div class="variety-price">35 CHF</div>
             </div>
             <div class="variety-card">
                 <div class="variety-icon">⭐</div>
                 <h3>Limited Edition</h3>
                 <div class="variety-origin">Super Limited</div>
-                <p>Exclusive, limited-quantity coffees featuring unique processing methods and rare varietals. Available
-                    in very small batches for discerning customers.</p>
+                <p>Exclusive, limited-quantity coffees featuring unique processing methods and rare varietals.</p>
                 <div class="variety-price">40 CHF</div>
             </div>
             <div class="variety-card">
                 <div class="variety-icon">🏺</div>
                 <h3>Traditional Ibrik</h3>
                 <div class="variety-origin">Greek Style</div>
-                <p>Specially ground coffee perfect for traditional Greek/Turkish brewing methods. Authentic flavors
-                    respecting traditional preparation techniques.</p>
+                <p>Specially ground coffee perfect for traditional Greek/Turkish brewing methods.</p>
                 <div class="variety-price">30-38 CHF</div>
             </div>
         </section>
-
-        <!-- Order Section -->
         <section class="order-section">
             <h2 class="order-title">Experience Valenio Quality</h2>
-            <p>Discover the exceptional taste of Valenio specialty coffee. From expertly crafted espresso blends to
-                unique single-origin varieties, find your perfect coffee experience.</p>
-            <a href="index.html#contact" class="order-button">Order Your Favorite Product</a>
+            <p>Discover the exceptional taste of Valenio specialty coffee. From expertly crafted espresso blends to unique single-origin varieties, find your perfect coffee experience.</p>
+            <a href="index.html#contact" class="order-button" onclick="sendContact(event)">Order Your Favorite Product</a>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 HYPE Specialty Coffee. Powered by Valenio expertise.</p>
         </div>
     </footer>
+    <script>
+        function sendHome(e) {
+            if (window.parent !== window) { e.preventDefault(); window.parent.postMessage('goHome', '*'); }
+        }
+        function sendContact(e) {
+            if (window.parent !== window) { e.preventDefault(); window.parent.postMessage('goToContact', '*'); }
+        }
+    </script>
 </body>
-
 </html>
